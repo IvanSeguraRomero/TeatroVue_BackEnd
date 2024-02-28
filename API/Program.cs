@@ -1,25 +1,55 @@
-var builder = WebApplication.CreateBuilder(args);
+using TeatroWeb.Data;
+using TeatroWeb.Business;
+using Microsoft.EntityFrameworkCore;
+// using System.Text.Json.Serialization;
 
-// Add services to the container.
+    var builder = WebApplication.CreateBuilder(args);
+    var connectionString = builder.Configuration.GetConnectionString("ServerDB");
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// Context
+    builder.Services.AddDbContext<TeatroBackendContext>(options =>
+        options.UseSqlServer(connectionString));
 
-var app = builder.Build();
+// // Configuración de serialización JSON
+// builder.Services.AddControllers()
+//     .AddJsonOptions(options =>
+//     {
+//         // Configuración para incluir propiedades nulas en la respuesta JSON
+//         options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+//     });
+
+    // Scoped Services
+    // Ticket
+    builder.Services.AddScoped<ITicketService, TicketService>(); 
+    builder.Services.AddScoped<ITicketRepository, TicketEFRepository>();
+
+    // Play
+    builder.Services.AddScoped<IPlayService, PlayService>(); 
+    builder.Services.AddScoped<IPlayRepository, PlayEFRepository>();
+
+    // User
+    builder.Services.AddScoped<IUserService, UserService>(); 
+    builder.Services.AddScoped<IUserRepository, UserEFRepository>();
+
+    builder.Services.AddControllers();
+
+    // Add services to the container.
+    builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddSwaggerGen();
+    builder.Services.AddAuthorization();
+
+
+    var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
+    // Mirar para que el isdevelopment lo pille en Docker
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+// }
 
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();
+    app.UseHttpsRedirection();
+    app.UseAuthorization();
+    app.MapControllers();
+    app.Run();

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\API\\API.csproj": {}
+    "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\API\\API.csproj": {
+    "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
-        "outputPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\API\\obj\\",
+        "projectPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

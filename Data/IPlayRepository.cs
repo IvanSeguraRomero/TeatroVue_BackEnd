@@ -8,8 +8,8 @@ namespace TeatroWeb.Data{
         void UpdatePlay (Play play);
         void DeletePlay(int id);
         List<Play> GetAll();
-        List<Ticket> GetBoughtTickets();
-        List<Play> GetPlaysByGenre();
+        List<Ticket> GetBoughtTickets(int id);
+        List<Play> GetPlaysByGenre(string genre);
     }
 }
 

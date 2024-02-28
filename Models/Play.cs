@@ -17,10 +17,10 @@ public class Play{
     public string synopsis {get; set;}
 
     [Column(TypeName = "nvarchar(300)")]
-    public string director {get; set;}
+    public string? director {get; set;}
 
     [Column(TypeName = "nvarchar(30)")]
-    public string genre {get; set;}
+    public string? genre {get; set;}
 
     public List<Ticket> tickets {get; set;} = new List<Ticket>(); 
 

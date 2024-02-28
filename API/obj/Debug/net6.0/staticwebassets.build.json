@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cZPey0kUn0mzxpr4LIwwaF6UI0VjM8SYCc0ELsFQaQk=",
+  "Source": "TeatroWeb.API",
+  "BasePath": "_content/TeatroWeb.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

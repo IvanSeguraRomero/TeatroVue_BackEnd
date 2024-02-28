@@ -8,6 +8,6 @@ namespace TeatroWeb.Data{
         void UpdateUser (User user);
         void DeleteUser(int id);
         List<User> GetAll();
-        List<Ticket> GetUserTickets();
+        List<Ticket> GetUserTickets(int id);
     }
 }

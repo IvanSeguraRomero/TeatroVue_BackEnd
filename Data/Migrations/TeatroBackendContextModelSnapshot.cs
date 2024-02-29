@@ -45,6 +45,7 @@ namespace TeatroWeb.Data.Migrations
                         .HasColumnType("nvarchar(400)");
 
                     b.Property<string>("title")
+                        .IsRequired()
                         .HasColumnType("nvarchar(80)");
 
                     b.HasKey("id");

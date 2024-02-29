@@ -17,7 +17,7 @@ public class TeatroBackendContext : DbContext{
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            
              // Una Play tiene una lista de Tickets
             modelBuilder.Entity<Play>()
                 .HasMany(p => p.tickets)

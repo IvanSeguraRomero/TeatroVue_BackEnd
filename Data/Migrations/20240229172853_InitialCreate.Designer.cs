@@ -12,7 +12,7 @@ using TeatroWeb.Data;
 namespace TeatroWeb.Data.Migrations
 {
     [DbContext(typeof(TeatroBackendContext))]
-    [Migration("20240228202347_InitialCreate")]
+    [Migration("20240229172853_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,6 +47,7 @@ namespace TeatroWeb.Data.Migrations
                         .HasColumnType("nvarchar(400)");
 
                     b.Property<string>("title")
+                        .IsRequired()
                         .HasColumnType("nvarchar(80)");
 
                     b.HasKey("id");

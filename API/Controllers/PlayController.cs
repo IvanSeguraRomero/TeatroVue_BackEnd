@@ -33,30 +33,71 @@ public class PlayController : ControllerBase
     }
     // POST action
     [HttpPost]
-    public IActionResult Create(Play play)
+    public IActionResult Create(PlayCreateDTO playDto)
     {            
-        playService.AddPlay(play);
-        return CreatedAtAction(nameof(Get), new { id = play.id }, play);
-    }
-    // PUT action
-    [HttpPut("{id}")]
-    public IActionResult Update(int id, Play play)
-    {
-        if (id != play.id)
-            return BadRequest();
-            
-        var existingPlay = playService.GetPlay(id);
-        if(existingPlay is null)
-            return NotFound();
-    
-        // Update the properties of the existingPlay entity with the values from the input play
-        existingPlay.id = play.id; // Update all relevant properties accordingly
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
 
-        // Call a method in your service layer to update the existingPlay entity
-        playService.UpdatePlay(existingPlay);        
-    
-        return NoContent();
+        var play = new Play
+        {
+            title = playDto.title,
+            descriptionPlay = playDto.descriptionPlay,
+            synopsis = playDto.synopsis,
+            director = playDto.director,
+            genre = playDto.genre
+        };
+
+        playService.AddPlay(play);
+
+        // Devolver la respuesta CreatedAtAction con el nuevo DTO
+        return CreatedAtAction(nameof(Get), new { id = play.id }, playDto);
     }
+
+
+    // PUT action
+        [HttpPut("{id}")]
+        public IActionResult Update(int id,[FromBody] PlayUpdateDTO playDto)
+        {
+            var existingPlay = playService.GetPlay(id);
+
+            if (existingPlay == null)
+            {
+                return NotFound();
+            }
+
+            
+            if (playDto.title != null)
+            {
+                existingPlay.title = playDto.title;
+            }
+
+            if (playDto.descriptionPlay != null)
+            {
+                existingPlay.descriptionPlay = playDto.descriptionPlay;
+            }
+
+            if (playDto.synopsis != null)
+            {
+                existingPlay.synopsis = playDto.synopsis;
+            }
+
+            if (playDto.director != null)
+            {
+                existingPlay.director = playDto.director;
+            }
+
+             if (playDto.genre != null)
+            {
+                existingPlay.genre = playDto.genre;
+            }
+
+            playService.UpdatePlay(existingPlay);
+
+            return NoContent();
+        }
+
     // DELETE action
    [HttpDelete("{id}")]
     public IActionResult Delete(int id)

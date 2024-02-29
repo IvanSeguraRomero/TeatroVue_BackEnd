@@ -15,7 +15,7 @@ namespace TeatroWeb.Data.Migrations
                 {
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    title = table.Column<string>(type: "nvarchar(80)", nullable: true),
+                    title = table.Column<string>(type: "nvarchar(80)", nullable: false),
                     descriptionPlay = table.Column<string>(type: "nvarchar(300)", nullable: false),
                     synopsis = table.Column<string>(type: "nvarchar(400)", nullable: false),
                     director = table.Column<string>(type: "nvarchar(300)", nullable: true),

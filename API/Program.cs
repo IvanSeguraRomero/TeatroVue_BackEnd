@@ -5,7 +5,6 @@ using Microsoft.EntityFrameworkCore;
 
     var builder = WebApplication.CreateBuilder(args);
     var connectionString = builder.Configuration.GetConnectionString("ServerDB");
-
 // Context
     builder.Services.AddDbContext<TeatroBackendContext>(options =>
         options.UseSqlServer(connectionString));

@@ -33,7 +33,7 @@ public class PlayController : ControllerBase
     }
     // POST action
     [HttpPost]
-    public IActionResult Create(PlayCreateDTO playDto)
+    public IActionResult Create([FromBody] PlayCreateDTO playDto)
     {            
         if (!ModelState.IsValid)
         {

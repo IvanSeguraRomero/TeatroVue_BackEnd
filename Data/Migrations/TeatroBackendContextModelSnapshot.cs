@@ -172,6 +172,18 @@ namespace TeatroWeb.Data.Migrations
                     b.HasIndex("userId");
 
                     b.ToTable("Tickets");
+
+                    b.HasData(
+                        new
+                        {
+                            id = 1,
+                            TicketColumn = 1,
+                            TicketRow = 1,
+                            playId = 1,
+                            price = 15.00m,
+                            scheduleTicket = new DateTime(2024, 3, 1, 21, 21, 37, 199, DateTimeKind.Local).AddTicks(6860),
+                            userId = 1
+                        });
                 });
 
             modelBuilder.Entity("TeatroWeb.Models.User", b =>
@@ -211,6 +223,20 @@ namespace TeatroWeb.Data.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            id = 1,
+                            direction = "addressexample",
+                            email = "user1@example.com",
+                            notes = "Note 1",
+                            passwd = "passexample",
+                            payment = "Credit Card",
+                            surname = "admin",
+                            tlf = 123456789,
+                            username = "admin"
+                        });
                 });
 
             modelBuilder.Entity("TeatroWeb.Models.Ticket", b =>

@@ -141,6 +141,36 @@ public class TeatroBackendContext : DbContext{
             tickets = new List<Ticket>()
         }
     );
+            modelBuilder.Entity<User>().HasData(
+                        new User
+                        {
+                            id = 1,
+                            username = "admin",
+                            surname = "admin",
+                            passwd = "passexample",
+                            direction = "addressexample",
+                            email = "user1@example.com",
+                            notes = "Note 1",
+                            tlf = 123456789,
+                            payment = "Credit Card",
+                            tickets = new List<Ticket>()
+                        }
+                        
+                    );
+            modelBuilder.Entity<Ticket>().HasData(
+                        new Ticket
+                        {
+                            id = 1,
+                            TicketRow = 1,
+                            TicketColumn = 1,
+                            price = 15.00m,
+                            // meter tambien el horario y sala para las reservas en venta
+                            scheduleTicket = DateTime.Now.AddDays(1),
+                            userId = 1,
+                            playId = 1
+                        }
+                    );
+
             base.OnModelCreating(modelBuilder);
         }
 }

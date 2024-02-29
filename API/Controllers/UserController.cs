@@ -25,6 +25,9 @@ public class UserController : ControllerBase
     {
         var user = userService.GetUser(id);
 
+        var tickets=userService.GetUserTickets(id);
+            user.tickets=tickets;
+        
         if(user == null)
             return NotFound();
 

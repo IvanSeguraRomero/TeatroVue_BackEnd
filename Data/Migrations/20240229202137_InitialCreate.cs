@@ -95,6 +95,16 @@ namespace TeatroWeb.Data.Migrations
                     { 12, "Una epopeya fantástica que desafía la realidad y la imaginación.", null, null, "En un reino donde los sueños tienen el poder de cambiar la realidad, un grupo de valientes aventureros emprende una búsqueda épica. 'Cazadores de Sueños' combina elementos de fantasía, acción y magia para ofrecer una experiencia teatral que transporta al público a mundos inexplorados.", "Sueños" }
                 });
 
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "id", "direction", "email", "notes", "passwd", "payment", "surname", "tlf", "username" },
+                values: new object[] { 1, "addressexample", "user1@example.com", "Note 1", "passexample", "Credit Card", "admin", 123456789, "admin" });
+
+            migrationBuilder.InsertData(
+                table: "Tickets",
+                columns: new[] { "id", "TicketColumn", "TicketRow", "playId", "price", "scheduleTicket", "userId" },
+                values: new object[] { 1, 1, 1, 1, 15.00m, new DateTime(2024, 3, 1, 21, 21, 37, 199, DateTimeKind.Local).AddTicks(6860), 1 });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Tickets_playId",
                 table: "Tickets",

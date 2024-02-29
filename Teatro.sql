@@ -19,6 +19,7 @@ CREATE TABLE User(
 	Id INT PRIMARY KEY,
 	Username NVARCHAR(30),
 	Surname NVARCHAR(80),
+	Passwd NVARCHAR(30),
     Direction NVARCHAR(100),
 	Email NVARCHAR(100),
     Notes NVARCHAR(100),

@@ -8,7 +8,7 @@ public class Play{
     public int id {get; set;}
 
     [Column(TypeName = "nvarchar(80)")]
-    public string? title {get; set;}
+    public string title {get; set;}
 
     [Column(TypeName = "nvarchar(300)")]
     public string descriptionPlay {get; set;}
@@ -17,10 +17,10 @@ public class Play{
     public string synopsis {get; set;}
 
     [Column(TypeName = "nvarchar(300)")]
-    public string director {get; set;}
+    public string? director {get; set;}
 
     [Column(TypeName = "nvarchar(30)")]
-    public string genre {get; set;}
+    public string? genre {get; set;}
 
     public List<Ticket> tickets {get; set;} = new List<Ticket>(); 
 

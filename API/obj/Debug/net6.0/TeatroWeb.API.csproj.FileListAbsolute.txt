@@ -1,0 +1,144 @@
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\TeatroWeb.API.csproj.AssemblyReference.cache
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\TeatroWeb.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\TeatroWeb.API.AssemblyInfoInputs.cache
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\TeatroWeb.API.AssemblyInfo.cs
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\TeatroWeb.API.csproj.CoreCompileInputs.cache
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\TeatroWeb.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\TeatroWeb.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\appsettings.json
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\TeatroWeb.API.exe
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\TeatroWeb.API.deps.json
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\TeatroWeb.API.runtimeconfig.json
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\TeatroWeb.API.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\TeatroWeb.API.pdb
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Humanizer.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\TeatroWeb.Business.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\TeatroWeb.Data.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\TeatroWeb.Models.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\TeatroWeb.Models.pdb
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\TeatroWeb.Business.pdb
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\bin\Debug\net6.0\TeatroWeb.Data.pdb
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\scopedcss\bundle\TeatroWeb.API.styles.css
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\TeatroWeb.API.csproj.CopyComplete
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\TeatroWeb.API.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\refint\TeatroWeb.API.dll
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\TeatroWeb.API.pdb
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\TeatroWeb.API.genruntimeconfig.cache
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\API\obj\Debug\net6.0\ref\TeatroWeb.API.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\appsettings.Development.json
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\appsettings.json
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\TeatroWeb.API.exe
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\TeatroWeb.API.deps.json
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\TeatroWeb.API.runtimeconfig.json
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\TeatroWeb.API.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\TeatroWeb.API.pdb
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Humanizer.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\TeatroWeb.Business.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\TeatroWeb.Data.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\TeatroWeb.Models.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\TeatroWeb.Models.pdb
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\TeatroWeb.Business.pdb
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\bin\Debug\net6.0\TeatroWeb.Data.pdb
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\TeatroWeb.API.csproj.AssemblyReference.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\TeatroWeb.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\TeatroWeb.API.AssemblyInfoInputs.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\TeatroWeb.API.AssemblyInfo.cs
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\TeatroWeb.API.csproj.CoreCompileInputs.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\TeatroWeb.API.MvcApplicationPartsAssemblyInfo.cs
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\TeatroWeb.API.MvcApplicationPartsAssemblyInfo.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\staticwebassets.build.json
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\staticwebassets.development.json
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\scopedcss\bundle\TeatroWeb.API.styles.css
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\TeatroWeb.API.csproj.CopyComplete
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\TeatroWeb.API.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\refint\TeatroWeb.API.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\TeatroWeb.API.pdb
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\TeatroWeb.API.genruntimeconfig.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\API\obj\Debug\net6.0\ref\TeatroWeb.API.dll

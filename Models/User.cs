@@ -13,6 +13,9 @@ public class User
     [Column(TypeName = "nvarchar(80)")]
     public string? surname {get; set;}
 
+    [Column(TypeName = "nvarchar(30)")]
+    public string? passwd {get; set;}
+
     [Column(TypeName = "nvarchar(100)")]
     public string? direction {get; set;}
 

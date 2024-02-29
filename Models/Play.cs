@@ -8,7 +8,7 @@ public class Play{
     public int id {get; set;}
 
     [Column(TypeName = "nvarchar(80)")]
-    public string? title {get; set;}
+    public string title {get; set;}
 
     [Column(TypeName = "nvarchar(300)")]
     public string descriptionPlay {get; set;}

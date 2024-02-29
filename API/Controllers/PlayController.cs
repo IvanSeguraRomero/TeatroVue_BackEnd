@@ -8,9 +8,11 @@ namespace TeatroWeb.Controllers;
 [Route("[controller]")]
 public class PlayController : ControllerBase
 {
+    private readonly ILogger<PlayController> _logger;
     private readonly IPlayService? playService;
-    public PlayController(IPlayService? _playService)
+    public PlayController(ILogger<PlayController> logger, IPlayService? _playService)
     {
+        _logger = logger;
         playService=_playService;
     }
 
@@ -19,8 +21,7 @@ public class PlayController : ControllerBase
     public ActionResult<List<Play>> GetAll() =>
         playService.GetAll();
     // GET by Id action
-    [HttpGet]
-    [Route("{id}")]
+    [HttpGet("{id}")]
     public ActionResult<Play> Get(int id)
     {
         var play = playService.GetPlay(id);
@@ -38,8 +39,7 @@ public class PlayController : ControllerBase
         return CreatedAtAction(nameof(Get), new { id = play.id }, play);
     }
     // PUT action
-    [HttpPut]
-    [Route("{id}")]
+    [HttpPut("{id}")]
     public IActionResult Update(int id, Play play)
     {
         if (id != play.id)
@@ -49,13 +49,16 @@ public class PlayController : ControllerBase
         if(existingPlay is null)
             return NotFound();
     
-        playService.UpdatePlay(play);           
+        // Update the properties of the existingPlay entity with the values from the input play
+        existingPlay.id = play.id; // Update all relevant properties accordingly
+
+        // Call a method in your service layer to update the existingPlay entity
+        playService.UpdatePlay(existingPlay);        
     
         return NoContent();
     }
     // DELETE action
-   [HttpDelete]
-   [Route("{id}")]
+   [HttpDelete("{id}")]
     public IActionResult Delete(int id)
     {
         var play = playService.GetPlay(id);
@@ -68,8 +71,7 @@ public class PlayController : ControllerBase
         return NoContent();
     }
 
-    [HttpGet]
-    [Route("{id}/tickets")]
+    [HttpGet("{id}/tickets")]
     public ActionResult<List<Ticket>> GetBoughtTickets(int id){
         var tickets = playService.GetBoughtTickets(id);
         if(tickets== null){
@@ -79,8 +81,7 @@ public class PlayController : ControllerBase
         }
     }
 
-    [HttpGet]
-    [Route("{genre}")]
+    [HttpGet("Genre/{genre}")]
     public ActionResult<List<Play>> GetPlaysByGenre(string genre){
         var plays = playService.GetPlaysByGenre(genre);
         if(plays== null){

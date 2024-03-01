@@ -165,7 +165,7 @@ public class TeatroBackendContext : DbContext{
                             TicketColumn = 1,
                             price = 15.00m,
                             // meter tambien el horario y sala para las reservas en venta
-                            scheduleTicket = DateTime.Now.AddDays(1),
+                            scheduleTicket = DateTime.Now,
                             userId = 1,
                             playId = 1
                         }
@@ -173,5 +173,5 @@ public class TeatroBackendContext : DbContext{
 
             base.OnModelCreating(modelBuilder);
         }
-}
+    }
 }

@@ -4,12 +4,13 @@ namespace TeatroWeb.Data{
     public interface IPlayRepository
     {
         void AddPlay(Play play);
+        PlayDTO GetPlayDTO(int id);
         Play GetPlay(int id);
         void UpdatePlay (Play play);
         void DeletePlay(int id);
-        List<Play> GetAll();
-        List<Ticket> GetBoughtTickets(int id);
-        List<Play> GetPlaysByGenre(string genre);
+        List<PlayDTO> GetAll();
+        List<TicketDTO> GetBoughtTickets(int id);
+        List<PlayDTO> GetPlaysByGenre(string genre);
     }
 }
 

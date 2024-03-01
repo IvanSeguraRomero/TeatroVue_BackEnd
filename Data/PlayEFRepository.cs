@@ -27,18 +27,45 @@ namespace TeatroWeb.Data{
             SaveChanges();
         }
 
-        public List<Play> GetAll()
-        {
-            var plays=_context.Plays.ToList();
-            return plays;
+        public List<PlayDTO> GetAll()
+        {   
+            var ticketRepository = new TicketEFRepository(_context);
+            var plays=_context.Plays.Include(p => p.tickets).ToList();
+            var playsDTO = plays.Select(p => new PlayDTO{
+                id=p.id,
+                title=p.title,
+                descriptionPlay=p.descriptionPlay,
+                synopsis=p.synopsis,
+                director=p.director,
+                genre=p.genre,
+                tickets=ticketRepository.GetTicketOfPlay(p.id)
+            }).ToList();
+            return playsDTO;
+            // var plays = _context.Plays.ToList();
+            // return plays;
         }
 
-        public Play GetPlay(int id)
+        public PlayDTO GetPlayDTO(int id)
         {
-            var play=_context.Plays.Find(id);
+            var play=_context.Plays.Include(p => p.tickets).ToList();
             if(play==null){
                 throw new KeyNotFoundException("Play not found.");
             }
+            var ticketRepository = new TicketEFRepository(_context);
+            var playDTO = play.Select(p => new PlayDTO{
+                id=p.id,
+                title=p.title,
+                descriptionPlay=p.descriptionPlay,
+                synopsis=p.synopsis,
+                director=p.director,
+                genre=p.genre,
+                tickets=ticketRepository.GetTicketOfPlay(p.id)
+            }).FirstOrDefault(play => play.id ==id);
+            return playDTO;
+        }
+
+        public Play GetPlay(int id){
+            var play = _context.Plays.Include(p => p.tickets).FirstOrDefault(play => play.id == id);
             return play;
         }
 
@@ -48,25 +75,43 @@ namespace TeatroWeb.Data{
             SaveChanges();
         }
 
-        public List<Ticket> GetBoughtTickets(int playId)
+        public List<TicketDTO> GetBoughtTickets(int playId)
         {
             
             var ticketsForPlay = _context.Tickets
                                         .Where(ticket => ticket.playId == playId)
                                         .ToList();
-            return ticketsForPlay;
+            var ticketsForPlayDTO = ticketsForPlay.Select(t => new TicketDTO{
+                id=t.id,
+                TicketRow = t.TicketRow,
+                TicketColumn = t.TicketColumn,
+                price = t.price,
+                scheduleTicket = t.scheduleTicket,
+                userId = t.userId,
+                playId = t.playId
+            }).ToList();
+            return ticketsForPlayDTO;
         }
 
-        public List<Play> GetPlaysByGenre(string genre)
+        public List<PlayDTO> GetPlaysByGenre(string genre)
         {
             var playsGenre = _context.Plays
                              .Where(play => play.genre == genre)
                              .ToList();
-
             if (playsGenre == null){
                 throw new KeyNotFoundException("Plays with the specific genre not found.");
             }
-            return playsGenre;
+            var ticketRepository = new TicketEFRepository(_context);
+            var playsDTO = playsGenre.Select(p => new PlayDTO{
+                id=p.id,
+                title=p.title,
+                descriptionPlay=p.descriptionPlay,
+                synopsis=p.synopsis,
+                director=p.director,
+                genre=p.genre,
+                tickets=ticketRepository.GetTicketOfPlay(p.id)
+            }).ToList();
+            return playsDTO;
 
         }
 

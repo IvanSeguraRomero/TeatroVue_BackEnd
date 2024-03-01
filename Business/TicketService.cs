@@ -22,13 +22,13 @@ public class TicketService : ITicketService{
         _repository.DeleteTicket(id);
     }
 
-    public List<Ticket> GetAll()
+    public List<TicketDTO> GetAll()
     {
         var tickets=_repository.GetAll();
         return tickets;
     }
 
-    public Ticket GetTicket(int id)
+    public TicketDTO GetTicket(int id)
     {
         var ticket=_repository.GetTicket(id);
         return ticket;

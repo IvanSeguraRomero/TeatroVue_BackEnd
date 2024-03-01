@@ -1,6 +1,7 @@
 using TeatroWeb.Models;
 using TeatroWeb.Business;
 using Microsoft.AspNetCore.Mvc;
+using TeatroWeb.Data;
 
 namespace TeatroWeb.Controllers;
 
@@ -18,13 +19,13 @@ public class PlayController : ControllerBase
 
     // GET all action
     [HttpGet]
-    public ActionResult<List<Play>> GetAll() =>
+    public ActionResult<List<PlayDTO>> GetAll() =>
         playService.GetAll();
     // GET by Id action
     [HttpGet("{id}")]
-    public ActionResult<Play> Get(int id)
+    public ActionResult<PlayDTO> Get(int id)
     {
-        var play = playService.GetPlay(id);
+        var play = playService.GetPlayDTO(id);
 
         if(play == null)
             return NotFound();
@@ -113,7 +114,7 @@ public class PlayController : ControllerBase
     }
 
     [HttpGet("{id}/tickets")]
-    public ActionResult<List<Ticket>> GetBoughtTickets(int id){
+    public ActionResult<List<TicketDTO>> GetBoughtTickets(int id){
         var tickets = playService.GetBoughtTickets(id);
         if(tickets== null){
             return NotFound();
@@ -123,7 +124,7 @@ public class PlayController : ControllerBase
     }
 
     [HttpGet("Genre/{genre}")]
-    public ActionResult<List<Play>> GetPlaysByGenre(string genre){
+    public ActionResult<List<PlayDTO>> GetPlaysByGenre(string genre){
         var plays = playService.GetPlaysByGenre(genre);
         if(plays== null){
             return NotFound();

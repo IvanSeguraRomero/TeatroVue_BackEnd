@@ -27,19 +27,37 @@ namespace TeatroWeb.Data{
             SaveChanges();
         }
 
-        public List<Ticket> GetAll()
+        public List<TicketDTO> GetAll()
         {
-            var tickets=_context.Tickets.ToList();
-            return tickets;
+            var tickets=_context.Tickets;
+            var ticketsDTO = tickets.Select(t => new TicketDTO{
+                id=t.id,
+                TicketRow = t.TicketRow,
+                TicketColumn = t.TicketColumn,
+                price = t.price,
+                scheduleTicket = t.scheduleTicket,
+                userId = t.userId,
+                playId = t.playId
+            }).ToList();
+            return ticketsDTO;
         }
 
-        public Ticket GetTicket(int id)
+        public TicketDTO GetTicket(int id)
         {
-            var ticket=_context.Tickets.Find(id);
+            var ticket=_context.Tickets;
             if(ticket==null){
                 throw new KeyNotFoundException("Ticket not found.");
             }
-            return ticket;
+            var ticketDTO = ticket.Select(t => new TicketDTO{
+                id=t.id,
+                TicketRow = t.TicketRow,
+                TicketColumn = t.TicketColumn,
+                price = t.price,
+                scheduleTicket = t.scheduleTicket,
+                userId = t.userId,
+                playId = t.playId
+            }).FirstOrDefault(t => t.id == id)!;
+            return ticketDTO;
         }
 
         public void UpdateTicket(Ticket ticket)
@@ -52,5 +70,24 @@ namespace TeatroWeb.Data{
         {
             _context.SaveChanges();
         }
+
+
+        public List<TicketDTO> GetTicketOfPlay(int pid){
+            var ticket=_context.Tickets;
+            if(ticket==null){
+                throw new KeyNotFoundException("Ticket not found.");
+            }
+            var ticketDTO = ticket.Where(t => t.playId == pid).Select(t => new TicketDTO{
+                id=t.id,
+                TicketRow = t.TicketRow,
+                TicketColumn = t.TicketColumn,
+                price = t.price,
+                scheduleTicket = t.scheduleTicket,
+                userId = t.userId,
+                playId = t.playId
+            }).ToList();
+            return ticketDTO;
+        }
+        
     }
 }

@@ -16,12 +16,12 @@ public class TicketController : ControllerBase
 
     // GET all action
     [HttpGet]
-    public ActionResult<List<Ticket>> GetAll() =>
+    public ActionResult<List<TicketDTO>> GetAll() =>
         ticketService.GetAll();
     // GET by Id action
     [HttpGet]
     [Route("{id}")]
-    public ActionResult<Ticket> Get(int id)
+    public ActionResult<TicketDTO> Get(int id)
     {
         var ticket = ticketService.GetTicket(id);
 

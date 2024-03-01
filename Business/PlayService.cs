@@ -21,25 +21,30 @@ public class PlayService : IPlayService
         _repository.DeletePlay(id);
     }
 
-    public List<Play> GetAll()
+    public List<PlayDTO> GetAll()
     {
         var plays=_repository.GetAll();
         return plays;
     }
 
-    public List<Ticket> GetBoughtTickets(int id)
+    public List<TicketDTO> GetBoughtTickets(int id)
     {
         var tickets=_repository.GetBoughtTickets(id);
         return tickets;
     }
 
+    public PlayDTO GetPlayDTO(int id)
+    {
+        var play=_repository.GetPlayDTO(id);
+        return play;
+    }
     public Play GetPlay(int id)
     {
         var play=_repository.GetPlay(id);
         return play;
     }
 
-    public List<Play> GetPlaysByGenre(string genre)
+    public List<PlayDTO> GetPlaysByGenre(string genre)
     {
         var plays=_repository.GetPlaysByGenre(genre);
         return plays;

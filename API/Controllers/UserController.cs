@@ -16,17 +16,13 @@ public class UserController : ControllerBase
 
     // GET all action
     [HttpGet]
-    public ActionResult<List<User>> GetAll() =>
+    public ActionResult<List<UserDTO>> GetAll() =>
         userService.GetAll();
     // GET by Id action
-    [HttpGet]
-    [Route("{id}")]
-    public ActionResult<User> Get(int id)
+    [HttpGet("{id}")]
+    public ActionResult<UserDTO> Get(int id)
     {
-        var user = userService.GetUser(id);
-
-        var tickets=userService.GetUserTickets(id);
-            user.tickets=tickets;
+        var user = userService.GetUserDTO(id);
         
         if(user == null)
             return NotFound();
@@ -35,30 +31,81 @@ public class UserController : ControllerBase
     }
     // POST action
     [HttpPost]
-    public IActionResult Create(User user)
-    {            
+    public IActionResult Create([FromBody]UserCreateDTO userDTO)
+    {         
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }   
+        var user = new User
+        {
+            username=userDTO.username,
+            surname=userDTO.surname,
+            passwd=userDTO.passwd,
+            direction=userDTO.direction,
+            email=userDTO.email,
+            notes=userDTO.notes,
+            tlf=userDTO.tlf,
+            payment=userDTO.payment
+        };
+
         userService.AddUser(user);
         return CreatedAtAction(nameof(Get), new { id = user.id }, user);
     }
     // PUT action
-    [HttpPut]
-    [Route("{id}")]
-    public IActionResult Update(int id, User user)
-    {
-        if (id != user.id)
-            return BadRequest();
-            
+    [HttpPut("{id}")]
+    public IActionResult Update(int id,[FromBody] UserUpdateDTO userDTO)
+    {       
         var existingUser = userService.GetUser(id);
         if(existingUser is null)
             return NotFound();
-    
-        userService.UpdateUser(user);           
+
+        if (userDTO.username != null)
+        {
+            existingUser.username = userDTO.username;
+        }
+
+        if (userDTO.surname != null)
+        {
+            existingUser.surname = userDTO.surname;
+        }
+
+        if (userDTO.passwd != null)
+        {
+            existingUser.passwd = userDTO.passwd;
+        }
+
+        if (userDTO.direction != null)
+        {
+            existingUser.direction = userDTO.direction;
+        }
+
+        if (userDTO.email != null)
+        {
+            existingUser.email = userDTO.email;
+        }
+
+        if (userDTO.notes != null)
+        {
+            existingUser.notes = userDTO.notes;
+        }
+
+        if (userDTO.tlf != null)
+        {
+            existingUser.tlf = (int)userDTO.tlf;
+        }
+
+        if (userDTO.payment != null)
+        {
+            existingUser.payment = userDTO.payment;
+        }
+
+        userService.UpdateUser(existingUser);
     
         return NoContent();
     }
     // DELETE action
-   [HttpDelete]
-   [Route("{id}")]
+   [HttpDelete("{id}")]
     public IActionResult Delete(int id)
     {
         var user = userService.GetUser(id);
@@ -71,9 +118,8 @@ public class UserController : ControllerBase
         return NoContent();
     }
 
-    [HttpGet]
-    [Route("{id}/tickets")]
-    public ActionResult<List<Ticket>> GetUserTickets(int id){
+    [HttpGet("{id}/tickets")]
+    public ActionResult<List<TicketDTO>> GetUserTickets(int id){
         var tickets = userService.GetUserTickets(id);
         if(tickets== null){
             return NotFound();

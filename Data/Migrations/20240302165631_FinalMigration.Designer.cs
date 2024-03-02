@@ -12,8 +12,8 @@ using TeatroWeb.Data;
 namespace TeatroWeb.Data.Migrations
 {
     [DbContext(typeof(TeatroBackendContext))]
-    [Migration("20240229202137_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240302165631_FinalMigration")]
+    partial class FinalMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -183,8 +183,28 @@ namespace TeatroWeb.Data.Migrations
                             TicketRow = 1,
                             playId = 1,
                             price = 15.00m,
-                            scheduleTicket = new DateTime(2024, 3, 1, 21, 21, 37, 199, DateTimeKind.Local).AddTicks(6860),
+                            scheduleTicket = new DateTime(2024, 3, 2, 17, 56, 31, 734, DateTimeKind.Local).AddTicks(1061),
                             userId = 1
+                        },
+                        new
+                        {
+                            id = 2,
+                            TicketColumn = 2,
+                            TicketRow = 1,
+                            playId = 2,
+                            price = 15.00m,
+                            scheduleTicket = new DateTime(2024, 3, 2, 17, 56, 31, 734, DateTimeKind.Local).AddTicks(1095),
+                            userId = 1
+                        },
+                        new
+                        {
+                            id = 3,
+                            TicketColumn = 3,
+                            TicketRow = 1,
+                            playId = 1,
+                            price = 15.00m,
+                            scheduleTicket = new DateTime(2024, 3, 2, 17, 56, 31, 734, DateTimeKind.Local).AddTicks(1098),
+                            userId = 2
                         });
                 });
 
@@ -238,6 +258,18 @@ namespace TeatroWeb.Data.Migrations
                             surname = "admin",
                             tlf = 123456789,
                             username = "admin"
+                        },
+                        new
+                        {
+                            id = 2,
+                            direction = "addressexample",
+                            email = "user2@example.com",
+                            notes = "Note 2",
+                            passwd = "passexample",
+                            payment = "PayPal",
+                            surname = "no-admin",
+                            tlf = 987654321,
+                            username = "no-admin"
                         });
                 });
 

@@ -32,3 +32,20 @@ D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\Data\obj\Debug\net6.0\ref
 D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\Data\obj\Debug\net6.0\TeatroWeb.Data.pdb
 D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\Data\obj\Debug\net6.0\TeatroWeb.Data.genruntimeconfig.cache
 D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\Data\obj\Debug\net6.0\ref\TeatroWeb.Data.dll
+D:\SValero\BackendTeatro\Data\bin\Debug\net6.0\TeatroWeb.Data.deps.json
+D:\SValero\BackendTeatro\Data\bin\Debug\net6.0\TeatroWeb.Data.runtimeconfig.json
+D:\SValero\BackendTeatro\Data\bin\Debug\net6.0\TeatroWeb.Data.dll
+D:\SValero\BackendTeatro\Data\bin\Debug\net6.0\TeatroWeb.Data.pdb
+D:\SValero\BackendTeatro\Data\bin\Debug\net6.0\TeatroWeb.Models.dll
+D:\SValero\BackendTeatro\Data\bin\Debug\net6.0\TeatroWeb.Models.pdb
+D:\SValero\BackendTeatro\Data\obj\Debug\net6.0\TeatroWeb.Data.csproj.AssemblyReference.cache
+D:\SValero\BackendTeatro\Data\obj\Debug\net6.0\TeatroWeb.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\SValero\BackendTeatro\Data\obj\Debug\net6.0\TeatroWeb.Data.AssemblyInfoInputs.cache
+D:\SValero\BackendTeatro\Data\obj\Debug\net6.0\TeatroWeb.Data.AssemblyInfo.cs
+D:\SValero\BackendTeatro\Data\obj\Debug\net6.0\TeatroWeb.Data.csproj.CoreCompileInputs.cache
+D:\SValero\BackendTeatro\Data\obj\Debug\net6.0\TeatroWeb.Data.csproj.CopyComplete
+D:\SValero\BackendTeatro\Data\obj\Debug\net6.0\TeatroWeb.Data.dll
+D:\SValero\BackendTeatro\Data\obj\Debug\net6.0\refint\TeatroWeb.Data.dll
+D:\SValero\BackendTeatro\Data\obj\Debug\net6.0\TeatroWeb.Data.pdb
+D:\SValero\BackendTeatro\Data\obj\Debug\net6.0\TeatroWeb.Data.genruntimeconfig.cache
+D:\SValero\BackendTeatro\Data\obj\Debug\net6.0\ref\TeatroWeb.Data.dll

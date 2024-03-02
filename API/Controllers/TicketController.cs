@@ -19,8 +19,7 @@ public class TicketController : ControllerBase
     public ActionResult<List<TicketDTO>> GetAll() =>
         ticketService.GetAll();
     // GET by Id action
-    [HttpGet]
-    [Route("{id}")]
+    [HttpGet("{id}")]
     public ActionResult<TicketDTO> Get(int id)
     {
         var ticket = ticketService.GetTicket(id);
@@ -32,30 +31,60 @@ public class TicketController : ControllerBase
     }
     // POST action
     [HttpPost]
-    public IActionResult Create(Ticket ticket)
+    public IActionResult Create([FromBody] TicketCreateDTO ticketDTO)
     {            
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+        var ticket= new Ticket{
+            TicketRow = (int)ticketDTO.TicketRow!,
+            TicketColumn = (int)ticketDTO.TicketColumn!,
+            price = (decimal)ticketDTO.price!,
+            scheduleTicket = (DateTime)ticketDTO.scheduleTicket!,
+            userId = (int)ticketDTO.userId!,
+            playId = (int)ticketDTO.playId!
+        };
+
         ticketService.AddTicket(ticket);
-        return CreatedAtAction(nameof(Get), new { id = ticket.id }, ticket);
+        return CreatedAtAction(nameof(Get), new { id = ticket.id }, ticketDTO);
     }
     // PUT action
-    [HttpPut]
-    [Route("{id}")]
-    public IActionResult Update(int id, Ticket ticket)
+    [HttpPut("{id}")]
+    public IActionResult Update(int id,[FromBody] TicketUpdateDTO ticketDTO)
     {
-        if (id != ticket.id)
-            return BadRequest();
-            
         var existingTicket = ticketService.GetTicket(id);
-        if(existingTicket is null)
+        if(existingTicket == null){
             return NotFound();
-    
-        ticketService.UpdateTicket(ticket);           
+        }
+        var newTicketUpdated=new Ticket{
+            id = existingTicket.id,
+            TicketRow = existingTicket.TicketRow,
+            TicketColumn = existingTicket.TicketColumn,
+            price =  existingTicket.price,
+            scheduleTicket = existingTicket.scheduleTicket,
+            userId = existingTicket.userId,
+            playId = existingTicket.playId
+        };
+
+        if(ticketDTO.TicketRow!=null){
+            newTicketUpdated.TicketRow= (int)ticketDTO.TicketRow;
+        }
+        if(ticketDTO.TicketColumn!=null) {
+            newTicketUpdated.TicketColumn= (int)ticketDTO.TicketColumn;
+        }
+        if(ticketDTO.price!=null){
+            newTicketUpdated.price= (decimal)ticketDTO.price;
+        }  
+        if(ticketDTO.scheduleTicket!=null){
+            newTicketUpdated.scheduleTicket= (DateTime)ticketDTO.scheduleTicket;
+        }
+        ticketService.UpdateTicket(newTicketUpdated);           
     
         return NoContent();
     }
     // DELETE action
-   [HttpDelete]
-   [Route("{id}")]
+   [HttpDelete("{id}")]
     public IActionResult Delete(int id)
     {
         var ticket = ticketService.GetTicket(id);

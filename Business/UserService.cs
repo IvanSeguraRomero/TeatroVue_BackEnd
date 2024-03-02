@@ -21,7 +21,7 @@ public class UserService : IUserService
         _repository.DeleteUser(id);
     }
 
-    public List<User> GetAll()
+    public List<UserDTO> GetAll()
     {
         var users=_repository.GetAll();
         return users;
@@ -38,9 +38,15 @@ public class UserService : IUserService
         _repository.UpdateUser(user);
     }
 
-     public List<Ticket> GetUserTickets(int id)
+     public List<TicketDTO> GetUserTickets(int id)
     {
         var tickets=_repository.GetUserTickets(id);
         return tickets;
+    }
+
+    public UserDTO GetUserDTO(int id)
+    {
+        var user=_repository.GetUserDTO(id);
+        return user;
     }
 }

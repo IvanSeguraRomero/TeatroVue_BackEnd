@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TeatroWeb.Data.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class FinalMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -98,12 +98,26 @@ namespace TeatroWeb.Data.Migrations
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "id", "direction", "email", "notes", "passwd", "payment", "surname", "tlf", "username" },
-                values: new object[] { 1, "addressexample", "user1@example.com", "Note 1", "passexample", "Credit Card", "admin", 123456789, "admin" });
+                values: new object[,]
+                {
+                    { 1, "addressexample", "user1@example.com", "Note 1", "passexample", "Credit Card", "admin", 123456789, "admin" },
+                    { 2, "addressexample", "user2@example.com", "Note 2", "passexample", "PayPal", "no-admin", 987654321, "no-admin" }
+                });
 
             migrationBuilder.InsertData(
                 table: "Tickets",
                 columns: new[] { "id", "TicketColumn", "TicketRow", "playId", "price", "scheduleTicket", "userId" },
-                values: new object[] { 1, 1, 1, 1, 15.00m, new DateTime(2024, 3, 1, 21, 21, 37, 199, DateTimeKind.Local).AddTicks(6860), 1 });
+                values: new object[] { 1, 1, 1, 1, 15.00m, new DateTime(2024, 3, 2, 17, 56, 31, 734, DateTimeKind.Local).AddTicks(1061), 1 });
+
+            migrationBuilder.InsertData(
+                table: "Tickets",
+                columns: new[] { "id", "TicketColumn", "TicketRow", "playId", "price", "scheduleTicket", "userId" },
+                values: new object[] { 2, 2, 1, 2, 15.00m, new DateTime(2024, 3, 2, 17, 56, 31, 734, DateTimeKind.Local).AddTicks(1095), 1 });
+
+            migrationBuilder.InsertData(
+                table: "Tickets",
+                columns: new[] { "id", "TicketColumn", "TicketRow", "playId", "price", "scheduleTicket", "userId" },
+                values: new object[] { 3, 3, 1, 1, 15.00m, new DateTime(2024, 3, 2, 17, 56, 31, 734, DateTimeKind.Local).AddTicks(1098), 2 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Tickets_playId",

@@ -2236,19 +2236,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\peter\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj",
+      "projectUniqueName": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\Data\\TeatroWeb.Data.csproj",
       "projectName": "TeatroWeb.Data",
-      "projectPath": "D:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "D:\\SValero\\BackendTeatro\\Data\\obj\\",
+      "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\Data\\TeatroWeb.Data.csproj",
+      "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
+      "outputPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -2260,8 +2260,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
-              "projectPath": "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj"
+            "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\Models\\TeatroWeb.Models.csproj": {
+              "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\Models\\TeatroWeb.Models.csproj"
             }
           }
         }
@@ -2307,7 +2307,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.419\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.415\\RuntimeIdentifierGraph.json"
       }
     }
   }

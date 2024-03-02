@@ -88,6 +88,22 @@ namespace TeatroWeb.Data{
             }).ToList();
             return ticketDTO;
         }
+        public List<TicketDTO> GetTicketOfUser(int uid){
+            var ticket=_context.Tickets;
+            if(ticket==null){
+                throw new KeyNotFoundException("Ticket not found.");
+            }
+            var ticketDTO = ticket.Where(t => t.userId == uid).Select(t => new TicketDTO{
+                id=t.id,
+                TicketRow = t.TicketRow,
+                TicketColumn = t.TicketColumn,
+                price = t.price,
+                scheduleTicket = t.scheduleTicket,
+                userId = t.userId,
+                playId = t.playId
+            }).ToList();
+            return ticketDTO;
+        }
         
     }
 }

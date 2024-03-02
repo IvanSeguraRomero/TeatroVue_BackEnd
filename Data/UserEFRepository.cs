@@ -40,7 +40,7 @@ namespace TeatroWeb.Data{
                 notes=u.notes,
                 tlf=u.tlf,
                 payment=u.payment,
-                tickets=ticketRepository.GetTicketOfPlay(u.id)
+                tickets=ticketRepository.GetTicketOfUser(u.id)
             }).ToList();
 
             return usersDTO;
@@ -73,7 +73,7 @@ namespace TeatroWeb.Data{
                 notes=u.notes,
                 tlf=u.tlf,
                 payment=u.payment,
-                tickets=ticketRepository.GetTicketOfPlay(u.id)
+                tickets=ticketRepository.GetTicketOfUser(u.id)
             }).FirstOrDefault(user => user.id ==id);
 
             return userDTO;

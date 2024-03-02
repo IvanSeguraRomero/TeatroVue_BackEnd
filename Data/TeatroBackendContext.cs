@@ -154,6 +154,19 @@ public class TeatroBackendContext : DbContext{
                             tlf = 123456789,
                             payment = "Credit Card",
                             tickets = new List<Ticket>()
+                        },
+                        new User
+                        {
+                            id = 2,
+                            username = "no-admin",
+                            surname = "no-admin",
+                            passwd = "passexample",
+                            direction = "addressexample",
+                            email = "user2@example.com",
+                            notes = "Note 2",
+                            tlf = 987654321,
+                            payment = "PayPal",
+                            tickets = new List<Ticket>()
                         }
                         
                     );
@@ -167,6 +180,28 @@ public class TeatroBackendContext : DbContext{
                             // meter tambien el horario y sala para las reservas en venta
                             scheduleTicket = DateTime.Now,
                             userId = 1,
+                            playId = 1
+                        },
+                        new Ticket
+                        {
+                            id = 2,
+                            TicketRow = 1,
+                            TicketColumn = 2,
+                            price = 15.00m,
+                            // meter tambien el horario y sala para las reservas en venta
+                            scheduleTicket = DateTime.Now,
+                            userId = 1,
+                            playId = 2
+                        },
+                        new Ticket
+                        {
+                            id = 3,
+                            TicketRow = 1,
+                            TicketColumn = 3,
+                            price = 15.00m,
+                            // meter tambien el horario y sala para las reservas en venta
+                            scheduleTicket = DateTime.Now,
+                            userId = 2,
                             playId = 1
                         }
                     );

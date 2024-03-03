@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TeatroWeb.Data.Migrations
 {
-    public partial class FinalMigration : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -107,17 +107,17 @@ namespace TeatroWeb.Data.Migrations
             migrationBuilder.InsertData(
                 table: "Tickets",
                 columns: new[] { "id", "TicketColumn", "TicketRow", "playId", "price", "scheduleTicket", "userId" },
-                values: new object[] { 1, 1, 1, 1, 15.00m, new DateTime(2024, 3, 2, 17, 56, 31, 734, DateTimeKind.Local).AddTicks(1061), 1 });
+                values: new object[] { 1, 1, 1, 1, 15.00m, new DateTime(2024, 3, 3, 12, 58, 50, 491, DateTimeKind.Local).AddTicks(4006), 1 });
 
             migrationBuilder.InsertData(
                 table: "Tickets",
                 columns: new[] { "id", "TicketColumn", "TicketRow", "playId", "price", "scheduleTicket", "userId" },
-                values: new object[] { 2, 2, 1, 2, 15.00m, new DateTime(2024, 3, 2, 17, 56, 31, 734, DateTimeKind.Local).AddTicks(1095), 1 });
+                values: new object[] { 2, 2, 1, 2, 15.00m, new DateTime(2024, 3, 3, 12, 58, 50, 491, DateTimeKind.Local).AddTicks(4039), 1 });
 
             migrationBuilder.InsertData(
                 table: "Tickets",
                 columns: new[] { "id", "TicketColumn", "TicketRow", "playId", "price", "scheduleTicket", "userId" },
-                values: new object[] { 3, 3, 1, 1, 15.00m, new DateTime(2024, 3, 2, 17, 56, 31, 734, DateTimeKind.Local).AddTicks(1098), 2 });
+                values: new object[] { 3, 3, 1, 1, 15.00m, new DateTime(2024, 3, 3, 12, 58, 50, 491, DateTimeKind.Local).AddTicks(4042), 2 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Tickets_playId",

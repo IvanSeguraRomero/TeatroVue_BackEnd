@@ -1,21 +1,12 @@
 using TeatroWeb.Data;
 using TeatroWeb.Business;
 using Microsoft.EntityFrameworkCore;
-// using System.Text.Json.Serialization;
 
     var builder = WebApplication.CreateBuilder(args);
     var connectionString = builder.Configuration.GetConnectionString("ServerDB");
 // Context
     builder.Services.AddDbContext<TeatroBackendContext>(options =>
         options.UseSqlServer(connectionString));
-
-// // Configuración de serialización JSON
-// builder.Services.AddControllers()
-//     .AddJsonOptions(options =>
-//     {
-//         // Configuración para incluir propiedades nulas en la respuesta JSON
-//         options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
-//     });
 
     // Scoped Services
     // Ticket
@@ -31,6 +22,8 @@ using Microsoft.EntityFrameworkCore;
     builder.Services.AddScoped<IUserRepository, UserEFRepository>();
 
     builder.Services.AddControllers();
+
+    
 
     // Add services to the container.
     builder.Services.AddEndpointsApiExplorer();

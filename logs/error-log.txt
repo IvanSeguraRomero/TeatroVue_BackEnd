@@ -1,0 +1,46 @@
+03/03/2024 14:10:28 - Error al intentar obtener las obras: No se encontraron obras con el genero fdfs
+03/03/2024 14:11:06 - Error al intentar obtener las obras: No se encontraron obras con el genero null
+03/03/2024 14:12:31 - Error al intentar obtener los tickets: No se encontraron tickets con la obra de ID 231
+03/03/2024 14:12:41 - Error al intentar obtener los tickets: No se encontraron tickets con la obra de ID 13
+03/03/2024 14:12:58 - Error al intentar eliminar la obra: No se encontró la obra con ID 17
+03/03/2024 14:13:14 - Error al intentar acutalizar la obra con el 17: No se encontró la obra
+03/03/2024 14:13:49 - Error al obtener la información de la obra con ID 22: No se encontró la obra
+03/03/2024 14:15:33 - Error al obtener la información de las obras: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.)
+03/03/2024 14:20:41 - Error al obtener la información de los tickets: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.)
+03/03/2024 14:22:47 - Error al obtener la información del ticket con ID 4: No se encontró el ticket
+03/03/2024 14:25:16 - Error al crear un nuevo ticket: An error occurred while saving the entity changes. See the inner exception for details.
+03/03/2024 14:25:45 - Error al crear un nuevo ticket: An error occurred while saving the entity changes. See the inner exception for details.
+03/03/2024 14:26:30 - Error al crear un nuevo ticket: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.)
+03/03/2024 14:28:16 - Error al obtener la información de los tickets: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+03/03/2024 14:28:18 - Error al obtener la información de los tickets: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+03/03/2024 14:28:21 - Error al obtener la información de los tickets: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+03/03/2024 14:28:36 - Error al intentar acutalizar el ticket con el id 7: No se encontró el ticket
+03/03/2024 14:30:47 - Error al intentar eliminar el ticket: No se encontró el ticket con ID 12
+03/03/2024 14:30:56 - Error al intentar eliminar el ticket: No se encontró el ticket con ID 5
+03/03/2024 14:31:05 - Error al intentar eliminar el ticket: No se encontró el ticket con ID 4
+03/03/2024 14:31:26 - Error al intentar eliminar el ticket: No se encontró el ticket con ID 6
+03/03/2024 15:23:49 - Error al obtener la información del usuario con id 3: No se encontró el usuario
+03/03/2024 15:24:30 - Error al obtener la información del usuario con id 2: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.)
+03/03/2024 15:24:35 - Error al obtener la información de los usuarios: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.)
+03/03/2024 15:25:06 - Error al obtener la información de los usuarios: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.)
+03/03/2024 15:27:38 - Error al crear un nuevo usuario: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.)
+03/03/2024 15:27:48 - Error al crear un nuevo usuario: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+03/03/2024 15:27:51 - Error al crear un nuevo usuario: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+03/03/2024 15:27:56 - Error al crear un nuevo usuario: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+03/03/2024 15:27:57 - Error al crear un nuevo usuario: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+03/03/2024 15:30:18 - Error al actualizar el usuario: User not found.
+03/03/2024 15:30:42 - Error al actualizar el usuario: User not found.
+03/03/2024 15:31:16 - Error al actualizar el usuario: User not found.
+03/03/2024 15:32:44 - Error al actualizar el usuario: User not found.
+03/03/2024 15:33:48 - Error al actualizar el usuario: User not found.
+03/03/2024 15:35:01 - Error al actualizar el usuario: User not found.
+03/03/2024 15:36:33 - Error al obtener la información del usuario con id 6: No se encontró el usuario
+03/03/2024 15:37:35 - Error al intentar acutalizar el usuario con id 7: No se encontró el usuario
+03/03/2024 15:40:26 - Error al intentar eliminar el usuario: No se encontró el usuario con id 8
+03/03/2024 15:40:49 - Error al obtener la información del usuario con id 7: No se encontró el usuario
+03/03/2024 15:40:57 - Error al obtener la información del usuario con id 6: No se encontró el usuario
+03/03/2024 15:41:04 - Error al obtener la información del usuario con id 5: No se encontró el usuario
+03/03/2024 15:41:10 - Error al obtener la información del usuario con id 4: No se encontró el usuario
+03/03/2024 15:41:26 - Error al obtener la información del usuario con id 3: No se encontró el usuario
+03/03/2024 15:41:31 - Error al intentar eliminar el usuario: No se encontró el usuario con id 3
+03/03/2024 15:43:44 - Error al intentar obtener los tickets: No se encontraron tickets del usuario con id 2

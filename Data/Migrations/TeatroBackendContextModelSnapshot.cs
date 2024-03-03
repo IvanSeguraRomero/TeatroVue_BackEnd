@@ -181,7 +181,7 @@ namespace TeatroWeb.Data.Migrations
                             TicketRow = 1,
                             playId = 1,
                             price = 15.00m,
-                            scheduleTicket = new DateTime(2024, 3, 2, 17, 56, 31, 734, DateTimeKind.Local).AddTicks(1061),
+                            scheduleTicket = new DateTime(2024, 3, 3, 12, 58, 50, 491, DateTimeKind.Local).AddTicks(4006),
                             userId = 1
                         },
                         new
@@ -191,7 +191,7 @@ namespace TeatroWeb.Data.Migrations
                             TicketRow = 1,
                             playId = 2,
                             price = 15.00m,
-                            scheduleTicket = new DateTime(2024, 3, 2, 17, 56, 31, 734, DateTimeKind.Local).AddTicks(1095),
+                            scheduleTicket = new DateTime(2024, 3, 3, 12, 58, 50, 491, DateTimeKind.Local).AddTicks(4039),
                             userId = 1
                         },
                         new
@@ -201,7 +201,7 @@ namespace TeatroWeb.Data.Migrations
                             TicketRow = 1,
                             playId = 1,
                             price = 15.00m,
-                            scheduleTicket = new DateTime(2024, 3, 2, 17, 56, 31, 734, DateTimeKind.Local).AddTicks(1098),
+                            scheduleTicket = new DateTime(2024, 3, 3, 12, 58, 50, 491, DateTimeKind.Local).AddTicks(4042),
                             userId = 2
                         });
                 });

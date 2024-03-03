@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t+61fjzWnVOfb45+noclhIhswwWCNkX5tuPgfYaXEYx2x8wEeLjuealHHCBgVSEncCQk2cWuJ/yQaF+850gHXw==",
+  "dgSpecHash": "R/4x3J5QVzZbvieVxKPUtk8lfnO97ICnbz7bPO6kaSdhzsOtsfpuQIU42YMrAwYVbl70rcGD4hmrseSy0bIISw==",
   "success": true,
-  "projectFilePath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\Models\\TeatroWeb.Models.csproj",
+  "projectFilePath": "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

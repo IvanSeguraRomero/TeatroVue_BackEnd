@@ -49,9 +49,6 @@ namespace TeatroWeb.Data{
         public User GetUser(int id)
         {
             var user=_context.Users.Find(id);
-            if(user==null){
-                throw new KeyNotFoundException("User not found.");
-            }
             return user;
         }
 

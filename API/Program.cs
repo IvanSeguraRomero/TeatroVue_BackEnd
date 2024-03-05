@@ -43,5 +43,12 @@ using Microsoft.EntityFrameworkCore;
 
     app.UseHttpsRedirection();
     app.UseAuthorization();
+    app.UseCors(options =>
+    {
+    options.WithOrigins("http://localhost:5173")
+           .AllowAnyMethod()
+           .AllowAnyHeader()
+           .AllowCredentials();
+    });
     app.MapControllers();
     app.Run();

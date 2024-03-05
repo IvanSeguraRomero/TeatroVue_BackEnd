@@ -2260,8 +2260,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
-              "projectPath": "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj"
+            "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
+              "projectPath": "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj"
             }
           }
         }

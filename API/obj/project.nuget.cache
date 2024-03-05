@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GrQ/msAnf8//1oepROtwS/Osk+o+sbcF7h1Wv1pT2nlblzEBkyjV7qgsquC+lChfmD9h1/uN2yoSGrr3BpdRbw==",
+  "dgSpecHash": "cqr1HwjH5HLxq/dZKDZsA3fBc8bUGUQF2jQa0AWw9WM1jmoQ6Ag3/4DzUOXSw3s3XcgmBms1hvs03LCNZhwzcw==",
   "success": true,
-  "projectFilePath": "d:\\SValero\\BackendTeatro\\API\\TeatroWeb.API.csproj",
+  "projectFilePath": "D:\\SValero\\BackendTeatro\\API\\TeatroWeb.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

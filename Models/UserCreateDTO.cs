@@ -11,8 +11,8 @@ public class UserCreateDTO
     public string surname {get; set;}
     [Required]
     public string passwd {get; set;}
-    [Required]
-    public string direction {get; set;}
+
+    public string? direction {get; set;}
     [Required]
     public string email {get; set;}
 
@@ -21,7 +21,6 @@ public class UserCreateDTO
     [Required]
     public int tlf {get; set;}
 
-    [Required]
     public string? payment {get; set;}
 
 }

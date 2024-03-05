@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {}
+    "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {}
   },
   "projects": {
-    "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
+    "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj",
+        "projectUniqueName": "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj",
         "projectName": "TeatroWeb.Models",
-        "projectPath": "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj",
+        "projectPath": "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "d:\\SValero\\BackendTeatro\\Models\\obj\\",
+        "outputPath": "D:\\SValero\\BackendTeatro\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"

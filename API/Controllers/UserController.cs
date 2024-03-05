@@ -57,6 +57,15 @@ public class UserController : ControllerBase
             LogError(new Exception("No se pudo crear el usuario"), $"Error al almacenar la información del usuario {ModelState}");
             return BadRequest(ModelState);
         }   
+        if(userDTO.direction==null){
+            userDTO.direction="";
+            }
+        if(userDTO.notes==null){
+            userDTO.notes="";
+        }
+        if(userDTO.payment==null){
+            userDTO.payment="";
+        }
         var user = new User
         {
             username=userDTO.username,

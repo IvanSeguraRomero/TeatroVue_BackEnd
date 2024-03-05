@@ -44,3 +44,13 @@
 03/03/2024 15:41:26 - Error al obtener la información del usuario con id 3: No se encontró el usuario
 03/03/2024 15:41:31 - Error al intentar eliminar el usuario: No se encontró el usuario con id 3
 03/03/2024 15:43:44 - Error al intentar obtener los tickets: No se encontraron tickets del usuario con id 2
+04/03/2024 16:14:38 - Error al obtener la información de la obra con ID 0: No se encontró la obra
+04/03/2024 16:14:48 - Error al obtener la información de la obra con ID 0: No se encontró la obra
+04/03/2024 16:15:17 - Error al obtener la información de la obra con ID 0: No se encontró la obra
+04/03/2024 16:15:38 - Error al obtener la información de la obra con ID 0: No se encontró la obra
+04/03/2024 16:15:40 - Error al obtener la información de la obra con ID 0: No se encontró la obra
+05/03/2024 11:42:38 - Error al crear un nuevo usuario: An error occurred while saving the entity changes. See the inner exception for details.
+05/03/2024 11:42:50 - Error al crear un nuevo usuario: An error occurred while saving the entity changes. See the inner exception for details.
+05/03/2024 11:43:26 - Error al crear un nuevo usuario: An error occurred while saving the entity changes. See the inner exception for details.
+05/03/2024 11:43:52 - Error al crear un nuevo usuario: An error occurred while saving the entity changes. See the inner exception for details.
+05/03/2024 11:44:09 - Error al crear un nuevo usuario: An error occurred while saving the entity changes. See the inner exception for details.

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\SValero\\BackendTeatro\\API\\TeatroWeb.API.csproj": {}
+    "D:\\SValero\\BackendTeatro\\API\\TeatroWeb.API.csproj": {}
   },
   "projects": {
-    "d:\\SValero\\BackendTeatro\\API\\TeatroWeb.API.csproj": {
+    "D:\\SValero\\BackendTeatro\\API\\TeatroWeb.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\SValero\\BackendTeatro\\API\\TeatroWeb.API.csproj",
+        "projectUniqueName": "D:\\SValero\\BackendTeatro\\API\\TeatroWeb.API.csproj",
         "projectName": "TeatroWeb.API",
-        "projectPath": "d:\\SValero\\BackendTeatro\\API\\TeatroWeb.API.csproj",
+        "projectPath": "D:\\SValero\\BackendTeatro\\API\\TeatroWeb.API.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "d:\\SValero\\BackendTeatro\\API\\obj\\",
+        "outputPath": "D:\\SValero\\BackendTeatro\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,11 +26,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "d:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj": {
-                "projectPath": "d:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj"
+              "D:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj": {
+                "projectPath": "D:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj"
               },
-              "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
-                "projectPath": "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj"
+              "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
+                "projectPath": "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "d:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj": {
+    "D:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj",
+        "projectUniqueName": "D:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj",
         "projectName": "TeatroWeb.Business",
-        "projectPath": "d:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj",
+        "projectPath": "D:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "d:\\SValero\\BackendTeatro\\Business\\obj\\",
+        "outputPath": "D:\\SValero\\BackendTeatro\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -101,11 +101,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "d:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj": {
-                "projectPath": "d:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj"
+              "D:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj": {
+                "projectPath": "D:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj"
               },
-              "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
-                "projectPath": "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj"
+              "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
+                "projectPath": "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj"
               }
             }
           }
@@ -139,14 +139,14 @@
         }
       }
     },
-    "d:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj": {
+    "D:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj",
+        "projectUniqueName": "D:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj",
         "projectName": "TeatroWeb.Data",
-        "projectPath": "d:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj",
+        "projectPath": "D:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "d:\\SValero\\BackendTeatro\\Data\\obj\\",
+        "outputPath": "D:\\SValero\\BackendTeatro\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -161,8 +161,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
-                "projectPath": "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj"
+              "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
+                "projectPath": "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj"
               }
             }
           }
@@ -212,14 +212,14 @@
         }
       }
     },
-    "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
+    "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj",
+        "projectUniqueName": "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj",
         "projectName": "TeatroWeb.Models",
-        "projectPath": "d:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj",
+        "projectPath": "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "d:\\SValero\\BackendTeatro\\Models\\obj\\",
+        "outputPath": "D:\\SValero\\BackendTeatro\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -12,8 +12,8 @@ using TeatroWeb.Data;
 namespace TeatroWeb.Data.Migrations
 {
     [DbContext(typeof(TeatroBackendContext))]
-    [Migration("20240303115850_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240306120027_FinalMigration")]
+    partial class FinalMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -59,6 +59,8 @@ namespace TeatroWeb.Data.Migrations
                         {
                             id = 1,
                             descriptionPlay = "Una obra intrigante que explora los misterios del teatro clásico.",
+                            director = "Ramón Peón (La Habana, Cuba; 1897 - San Juan, Puerto Rico; 1971) fue un periodista, bailarín, músico, productor, director, camarógrafo, actor y guionista de cine cubano. Se inició como camarógrafo en los antiguos estudios Kalem y Vitagraph, de Nueva York.",
+                            genre = "Horror",
                             synopsis = "En el bullicioso mundo teatral del siglo XIX, un enmascarado misterioso acecha entre bambalinas, desentrañando secretos oscuros y rivalidades encubiertas. Con giros inesperados, 'La Máscara Oculta' transporta a la audiencia a un viaje lleno de intriga y emoción.",
                             title = "La Máscara"
                         },
@@ -66,6 +68,8 @@ namespace TeatroWeb.Data.Migrations
                         {
                             id = 4,
                             descriptionPlay = "Una versión contemporánea del clásico de Shakespeare con un giro moderno.",
+                            director = "Mark Anthony Luhrmann (Sídney, Nueva Gales del Sur, 17 de septiembre de 1962), conocido como Baz Luhrmann, es un actor, director, guionista y productor de cine australiano. Es ampliamente considerado como uno de los más destacados directores de cine.",
+                            genre = "Romance",
                             synopsis = "En las bulliciosas calles de la ciudad actual, dos almas destinadas se encuentran en medio de la rivalidad de sus familias. 'Romeo y Julieta Reimaginados' fusiona la poesía de Shakespeare con la vibrante energía de la cultura urbana, explorando el amor y la tragedia en el siglo XXI.",
                             title = "Romeo y Julieta"
                         },
@@ -73,6 +77,8 @@ namespace TeatroWeb.Data.Migrations
                         {
                             id = 5,
                             descriptionPlay = "Una odisea surrealista a través de la mente humana.",
+                            director = "Gerardo Vera Perales (Miraflores de la Sierra (Madrid) 10 de marzo de 1947 - 20 de septiembre de 2020)fue un escenógrafo, diseñador de vestuario, actor y director de cine y de teatro español. Dirigió el espectáculo 'Azabache' en la Expo92 de Sevilla, cosechando un fabuloso éxito.",
+                            genre = "Drama",
                             synopsis = "Sumérgete en el fascinante paisaje de los sueños con 'El Jardín de los Sueños'. Esta obra surrealista lleva al público a un viaje introspectivo a medida que los personajes navegan por los recovecos de la mente humana, explorando deseos, miedos y esperanzas ocultas.",
                             title = "Los Sueños"
                         },
@@ -80,6 +86,8 @@ namespace TeatroWeb.Data.Migrations
                         {
                             id = 6,
                             descriptionPlay = "Un drama conmovedor sobre la vida, la pérdida y la redención.",
+                            director = "",
+                            genre = "",
                             synopsis = "En un pequeño teatro al borde de la quiebra, un grupo de actores veteranos se reúne para una última actuación que cambiará sus vidas para siempre. 'El Último Acto' es un conmovedor tributo al poder del arte y la capacidad de encontrar significado incluso en los momentos más oscuros.",
                             title = "El Último Acto"
                         },
@@ -87,6 +95,8 @@ namespace TeatroWeb.Data.Migrations
                         {
                             id = 2,
                             descriptionPlay = "Una experiencia teatral única para toda la familia.",
+                            director = "Juanjo Pastor es un joven actor, que siempre ha tenido claro que quería dedicarse al mundo del espectáculo. Desde bien pequeño, en el colegio ya tenía teatro como asignatura extraescolar, y  también más tarde en el instituto.",
+                            genre = "Drama",
                             synopsis = "Acompaña a personajes entrañables en un viaje mágico a través de cuentos clásicos y nuevos relatos. 'Cuentos en el Escenario' combina la magia del teatro con la nostalgia de los cuentos, creando un espectáculo encantador para todas las edades.",
                             title = "En el Escenario"
                         },
@@ -94,6 +104,8 @@ namespace TeatroWeb.Data.Migrations
                         {
                             id = 3,
                             descriptionPlay = "Un thriller teatral que mantendrá al público al borde de sus asientos.",
+                            director = "Abel González Melo (La Habana, 14 de enero de 1980) es doctor en Estudios Literarios y máster en Teatro por la Universidad Complutense de Madrid, así como licenciado en Teatrología por el Instituto Superior de Arte de Cuba.",
+                            genre = "Thriller",
                             synopsis = "En una ciudad envuelta en sombras, un detective atormentado se enfrenta a su caso más oscuro. 'El Misterio de la Noche' es un fascinante juego de ingenio y suspense que desafía al público a resolver el enigma antes de que se revele la verdad impactante.",
                             title = "La Noche"
                         },
@@ -101,6 +113,8 @@ namespace TeatroWeb.Data.Migrations
                         {
                             id = 7,
                             descriptionPlay = "Una comedia musical llena de risas y alegría.",
+                            director = "Nacido en Granada, Zapata inició sus estudios de canto en Madrid con Toñi Rosado Casas y los perfeccionó con Ana Luisa Chova en el Conservatorio Superior de Música de Valencia. Ha asistido a clases magistrales y cursos de perfeccionamiento con Yelena Obraztsova, Pedro Lavirgen, Renata Scotto.",
+                            genre = "Comedia",
                             synopsis = "En un mundo donde la risa es la moneda de cambio, 'Sinfonía de Risas' lleva al público a un viaje musical hilarante. Con números pegajosos y situaciones cómicas, esta obra es un antídoto perfecto para el estrés diario, ofreciendo una experiencia teatral ligera y divertida.",
                             title = "Sinfonía de Risas"
                         },
@@ -108,6 +122,8 @@ namespace TeatroWeb.Data.Migrations
                         {
                             id = 10,
                             descriptionPlay = "Un homenaje a los clásicos del teatro a lo largo de los siglos.",
+                            director = "Andrés Lima Fernández de Toro es un actor y director teatral español vinculado a la compañía de teatro Animalario. El 30 de septiembre de 2019 fue galardonado con el Premio Nacional de Teatro.Comienza su carrera como actor y director teatral, desde muy temprana edad.",
+                            genre = "Historia",
                             synopsis = "A través de escenas icónicas y monólogos inolvidables, 'El Legado del Escenario' rinde homenaje a las obras maestras que han definido el teatro a lo largo de la historia. Desde Shakespeare hasta Beckett, esta obra es un recordatorio conmovedor de la perdurabilidad del arte escénico.",
                             title = "Legado del Escenario"
                         },
@@ -115,6 +131,8 @@ namespace TeatroWeb.Data.Migrations
                         {
                             id = 11,
                             descriptionPlay = "Un drama introspectivo sobre la identidad y el autodescubrimiento.",
+                            director = "Estudios de Teatro en el Taller de Actores Profesionales que dirigió José Monleón en la RESAD (Real Escuela Superior de Arte Dramático) Madrid -España. Pertenece al grupo de investigación en Estéticas Urbanas, con artículos como Los Demonios hacen catarsis en el Palacio de Justicia.",
+                            genre = "Drama",
                             synopsis = "Cuando un espejo mágico revela versiones alternativas de sí mismos, los personajes de 'El Espejo Roto' se ven obligados a confrontar sus verdaderas identidades. Esta obra provocativa invita a la audiencia a reflexionar sobre la percepción y la realidad en un mundo lleno de reflejos fragmentados.",
                             title = "El Espejo Roto"
                         },
@@ -122,6 +140,8 @@ namespace TeatroWeb.Data.Migrations
                         {
                             id = 12,
                             descriptionPlay = "Una epopeya fantástica que desafía la realidad y la imaginación.",
+                            director = "Gerardo Vera Perales (Miraflores de la Sierra (Madrid) 10 de marzo de 1947 - 20 de septiembre de 2020)fue un escenógrafo, diseñador de vestuario, actor y director de cine y de teatro español. Dirigió el espectáculo 'Azabache' en la Expo92 de Sevilla, cosechando un fabuloso éxito.",
+                            genre = "Fantasía",
                             synopsis = "En un reino donde los sueños tienen el poder de cambiar la realidad, un grupo de valientes aventureros emprende una búsqueda épica. 'Cazadores de Sueños' combina elementos de fantasía, acción y magia para ofrecer una experiencia teatral que transporta al público a mundos inexplorados.",
                             title = "Sueños"
                         },
@@ -129,6 +149,8 @@ namespace TeatroWeb.Data.Migrations
                         {
                             id = 8,
                             descriptionPlay = "Un thriller psicológico que desafía la percepción de la realidad.",
+                            director = "Iván Morales inició su trayectoria en el underground español como editor de fanzines y locutor de radios libres en la década de los ochenta, para iniciar en su infancia una carrera de actor que le ha llevado a participar en series de televisión como Nissaga: Amistades peligrosas o Poblenou.",
+                            genre = "Thriller",
                             synopsis = "En un manicomio abandonado, un psiquiatra se enfrenta a los fantasmas de su pasado mientras trata a un paciente con una conexión sorprendente. 'El Despertar de las Sombras' explora los límites de la cordura y la verdad en un viaje psicológico inolvidable.",
                             title = "El Despertar"
                         },
@@ -136,6 +158,8 @@ namespace TeatroWeb.Data.Migrations
                         {
                             id = 9,
                             descriptionPlay = "Una experiencia teatral visualmente impactante que celebra la diversidad emocional.",
+                            director = "David Fernández Troncoso, desde que debutó con diez años, su vida profesional ha estado dedicada en exclusiva al teatro. Por su carrera pasan nombres como Titirimundi, Instituto del Teatro, Comedia de Buenos Aires, CAT…",
+                            genre = "Drama",
                             synopsis = "Con un enfoque innovador en la expresión emocional, 'Caleidoscopio de Emociones' fusiona la danza, el teatro y la tecnología para llevar al público a un viaje visualmente deslumbrante. Desde la euforia hasta la melancolía, esta obra invita a explorar la complejidad de las emociones humanas.",
                             title = "Las Emociones"
                         });
@@ -183,7 +207,7 @@ namespace TeatroWeb.Data.Migrations
                             TicketRow = 1,
                             playId = 1,
                             price = 15.00m,
-                            scheduleTicket = new DateTime(2024, 3, 3, 12, 58, 50, 491, DateTimeKind.Local).AddTicks(4006),
+                            scheduleTicket = new DateTime(2024, 3, 6, 13, 0, 26, 915, DateTimeKind.Local).AddTicks(1731),
                             userId = 1
                         },
                         new
@@ -193,7 +217,7 @@ namespace TeatroWeb.Data.Migrations
                             TicketRow = 1,
                             playId = 2,
                             price = 15.00m,
-                            scheduleTicket = new DateTime(2024, 3, 3, 12, 58, 50, 491, DateTimeKind.Local).AddTicks(4039),
+                            scheduleTicket = new DateTime(2024, 3, 6, 13, 0, 26, 915, DateTimeKind.Local).AddTicks(1768),
                             userId = 1
                         },
                         new
@@ -203,7 +227,7 @@ namespace TeatroWeb.Data.Migrations
                             TicketRow = 1,
                             playId = 1,
                             price = 15.00m,
-                            scheduleTicket = new DateTime(2024, 3, 3, 12, 58, 50, 491, DateTimeKind.Local).AddTicks(4042),
+                            scheduleTicket = new DateTime(2024, 3, 6, 13, 0, 26, 915, DateTimeKind.Local).AddTicks(1771),
                             userId = 2
                         });
                 });

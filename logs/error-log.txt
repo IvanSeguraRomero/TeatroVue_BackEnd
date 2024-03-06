@@ -1,1 +1,1 @@
-06/03/2024 19:47:39 - Error al obtener la información de la obra con ID 21: No se encontró la obra
+06/03/2024 22:11:49 - Error al obtener la información de la obra con ID 23: No se encontró la obra

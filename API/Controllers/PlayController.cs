@@ -21,15 +21,24 @@ public class PlayController : ControllerBase
 
     // GET all action
     [HttpGet]
-    public ActionResult<List<PlayDTO>> GetAll(string? genre, string? title){
+    public ActionResult<List<PlayDTO>> GetAll(string? genre, string? title,string? OrderBy){
         try{
             var query = playService.GetAll().AsQueryable();
             if(!string.IsNullOrWhiteSpace(genre)){
                 query = query.Where(play => play.genre.ToLower().Contains(genre.ToLower()));
             }
             if(!string.IsNullOrWhiteSpace(title)){
-                query = query.Where(play => play.title.ToLower().Contains(title.ToLower())).OrderBy(play => play.title);
+                query = query.Where(play => play.title.ToLower().Contains(title.ToLower()));
             }
+               if(!string.IsNullOrWhiteSpace(OrderBy)){
+                 if (OrderBy?.ToLower() == "desc")
+                    {
+                query = query.OrderByDescending(play => play.title);
+                    }
+                else if(OrderBy?.ToLower() == "asc"){
+                    query = query.OrderBy(play => play.title);
+                    }
+            } 
             var plays = query.ToList();
             if(plays.Count==0){
                 return NotFound();

@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Models\TeatroWeb.Models.csproj" />
     <ProjectReference Include="..\Business\TeatroWeb.Business.csproj" />
+    <ProjectReference Include="..\common\TeatroWeb.common.csproj" />
   </ItemGroup>
 
 </Project>

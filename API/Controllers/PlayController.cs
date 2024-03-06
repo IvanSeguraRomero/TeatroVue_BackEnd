@@ -1,8 +1,8 @@
 using TeatroWeb.Models;
 using TeatroWeb.Business;
 using Microsoft.AspNetCore.Mvc;
-using TeatroWeb.Data;
-using Microsoft.Extensions.Logging;
+using TeatroWeb.common;
+
 
 namespace TeatroWeb.Controllers;
 
@@ -10,22 +10,34 @@ namespace TeatroWeb.Controllers;
 [Route("[controller]")]
 public class PlayController : ControllerBase
 {
-    private readonly ILogger<PlayController> _logger;
+    
     private readonly IPlayService? playService;
-    public PlayController(ILogger<PlayController> logger, IPlayService? _playService)
+    private readonly IlogError _logError;
+    public PlayController(IlogError logError,IPlayService? _playService)
     {
-        _logger = logger;
+        _logError=logError;
         playService=_playService;
     }
 
     // GET all action
     [HttpGet]
-    public ActionResult<List<PlayDTO>> GetAll(){
+    public ActionResult<List<PlayDTO>> GetAll(string? genre, string? title){
         try{
-            return playService.GetAll();
+            var query = playService.GetAll().AsQueryable();
+            if(!string.IsNullOrWhiteSpace(genre)){
+                query = query.Where(play => play.genre.ToLower().Contains(genre.ToLower()));
+            }
+            if(!string.IsNullOrWhiteSpace(title)){
+                query = query.Where(play => play.title.ToLower().Contains(title.ToLower())).OrderBy(play => play.title);
+            }
+            var plays = query.ToList();
+            if(plays.Count==0){
+                return NotFound();
+            }
+            return plays;
         }catch (Exception ex)
         {
-            LogError(ex, $"Error al obtener la información de las obras");
+            _logError.LogErrorMethod(ex, $"Error al obtener la información de las obras");
             return StatusCode(500, "Error interno del servidor");
         }
     }
@@ -41,7 +53,7 @@ public class PlayController : ControllerBase
 
             if (play == null)
             {
-                LogError(new Exception("No se encontró la obra"), $"Error al obtener la información de la obra con ID {id}");
+                _logError.LogErrorMethod(new Exception("No se encontró la obra"), $"Error al obtener la información de la obra con ID {id}");
                 
                 return NotFound();
             }
@@ -50,7 +62,7 @@ public class PlayController : ControllerBase
         }
         catch (Exception ex)
         {
-            LogError(ex, $"Error al obtener la información de la obra con ID {id}");
+            _logError.LogErrorMethod(ex, $"Error al obtener la información de la obra con ID {id}");
             return StatusCode(500, "Error interno del servidor");
         }
     }
@@ -62,7 +74,7 @@ public class PlayController : ControllerBase
         try{            
         if (!ModelState.IsValid)
         {
-            LogError(new Exception("No se pudo crear la obra"), $"Error al almacenar la información de la obra {ModelState}");
+            _logError.LogErrorMethod(new Exception("No se pudo crear la obra"), $"Error al almacenar la información de la obra {ModelState}");
             return BadRequest(ModelState);
         }
 
@@ -80,7 +92,7 @@ public class PlayController : ControllerBase
         // Devolver la respuesta CreatedAtAction con el nuevo DTO
         return CreatedAtAction(nameof(Get), new { id = play.id }, playDto);
         }catch(Exception ex){
-                LogError(ex, "Error al crear una nueva obra");
+                _logError.LogErrorMethod(ex, "Error al crear una nueva obra");
                 return StatusCode(500, "Error interno del servidor");
         }
     }
@@ -95,7 +107,7 @@ public class PlayController : ControllerBase
 
             if (existingPlay == null)
             {
-                LogError(new Exception("No se encontró la obra"), $"Error al intentar acutalizar la obra con el id {id}");
+                 _logError.LogErrorMethod(new Exception("No se encontró la obra"), $"Error al intentar acutalizar la obra con el id {id}");
                 return NotFound();
             }
 
@@ -129,7 +141,7 @@ public class PlayController : ControllerBase
 
             return NoContent();
         }catch(Exception ex){
-                LogError(ex, "Error al actualizar la obra");
+                 _logError.LogErrorMethod(ex, "Error al actualizar la obra");
                 return StatusCode(500, "Error interno del servidor");
         }
         }
@@ -142,7 +154,7 @@ public class PlayController : ControllerBase
         var play = playService.GetPlay(id);
     
         if (play is null){
-            LogError(new Exception($"No se encontró la obra con ID {id}"), "Error al intentar eliminar la obra");
+             _logError.LogErrorMethod(new Exception($"No se encontró la obra con ID {id}"), "Error al intentar eliminar la obra");
             return NotFound();
         }
         
@@ -150,7 +162,7 @@ public class PlayController : ControllerBase
     
         return NoContent();
         }catch(Exception ex){
-                LogError(ex, "Error al eliminar la obra");
+                 _logError.LogErrorMethod(ex, "Error al eliminar la obra");
                 return StatusCode(500, "Error interno del servidor");
         }
     }
@@ -160,44 +172,15 @@ public class PlayController : ControllerBase
         try{
         var tickets = playService.GetBoughtTickets(id);
         if(tickets== null || tickets.Count==0){
-            LogError(new Exception($"No se encontraron tickets con la obra de ID {id}"), "Error al intentar obtener los tickets");
+             _logError.LogErrorMethod(new Exception($"No se encontraron tickets con la obra de ID {id}"), "Error al intentar obtener los tickets");
             return NotFound();
         }else{
             return tickets;
         }
         }catch(Exception ex){
-                LogError(ex, "Error al obtener los tickets");
+                 _logError.LogErrorMethod(ex, "Error al obtener los tickets");
                 return StatusCode(500, "Error interno del servidor");
         }
     }
-
-    [HttpGet("Genre/{genre}")]
-    public ActionResult<List<PlayDTO>> GetPlaysByGenre(string genre){
-        try{
-        var plays = playService.GetPlaysByGenre(genre);
-        if(plays== null || plays.Count==0){
-            LogError(new Exception($"No se encontraron obras con el genero {genre}"), "Error al intentar obtener las obras");
-            return NotFound();
-        }else{
-            return plays;
-        }
-        }catch(Exception ex){
-                LogError(ex, "Error al obtener la obra por género");
-                return StatusCode(500, "Error interno del servidor");
-        }
-    }
-
-    //logger
-    private void LogError(Exception ex, string message)
-    {
-        _logger.LogError(ex, message);
-        
-        var logFilePath = "../logs/error-log.txt";
-        System.IO.File.AppendAllText(logFilePath, $"{DateTime.Now} - {message}: {ex.Message}\n");
-
-        Console.WriteLine($"Error al escribir en el log: {ex.Message}");
-
-    }
-
-
+    //volumen de logs
 }

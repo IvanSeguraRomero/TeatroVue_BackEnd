@@ -1,6 +1,7 @@
 using TeatroWeb.Models;
 using TeatroWeb.Business;
 using Microsoft.AspNetCore.Mvc;
+using TeatroWeb.common;
 
 namespace TeatroWeb.Controllers;
 
@@ -8,12 +9,12 @@ namespace TeatroWeb.Controllers;
 [Route("[controller]")]
 public class UserController : ControllerBase
 {
-    private readonly ILogger<UserController> _logger;
+    private readonly IlogError _logError;
     private readonly IUserService? userService;
-    public UserController(ILogger<UserController> logger,IUserService? _userService)
+    public UserController(IlogError logError,IUserService? _userService)
     {
         userService=_userService;
-        _logger=logger;
+        _logError=logError;
     }
 
     // GET all action
@@ -23,7 +24,7 @@ public class UserController : ControllerBase
         return userService.GetAll();
         }catch (Exception ex)
         {
-            LogError(ex, $"Error al obtener la información de los usuarios");
+            _logError.LogErrorMethod(ex, $"Error al obtener la información de los usuarios");
             return StatusCode(500, "Error interno del servidor");
         }
     }
@@ -35,14 +36,14 @@ public class UserController : ControllerBase
         var user = userService.GetUserDTO(id);
         
         if(user == null){
-            LogError(new Exception("No se encontró el usuario"), $"Error al obtener la información del usuario con id {id}");
+            _logError.LogErrorMethod(new Exception("No se encontró el usuario"), $"Error al obtener la información del usuario con id {id}");
             return NotFound();
         }
 
         return user;
         }catch (Exception ex)
         {
-            LogError(ex, $"Error al obtener la información del usuario con id {id}");
+            _logError.LogErrorMethod(ex, $"Error al obtener la información del usuario con id {id}");
             return StatusCode(500, "Error interno del servidor");
         }
     }
@@ -54,7 +55,7 @@ public class UserController : ControllerBase
           
         if (!ModelState.IsValid)
         {
-            LogError(new Exception("No se pudo crear el usuario"), $"Error al almacenar la información del usuario {ModelState}");
+            _logError.LogErrorMethod(new Exception("No se pudo crear el usuario"), $"Error al almacenar la información del usuario {ModelState}");
             return BadRequest(ModelState);
         }   
         if(userDTO.direction==null){
@@ -82,7 +83,7 @@ public class UserController : ControllerBase
         return CreatedAtAction(nameof(Get), new { id = user.id }, user);
         }catch (Exception ex)
         {
-            LogError(ex, $"Error al crear un nuevo usuario");
+            _logError.LogErrorMethod(ex, $"Error al crear un nuevo usuario");
             return StatusCode(500, "Error interno del servidor");
         }
     }
@@ -93,7 +94,7 @@ public class UserController : ControllerBase
         try{
         var existingUser = userService.GetUser(id);
         if(existingUser == null){
-            LogError(new Exception("No se encontró el usuario"), $"Error al intentar acutalizar el usuario con id {id}");
+            _logError.LogErrorMethod(new Exception("No se encontró el usuario"), $"Error al intentar acutalizar el usuario con id {id}");
             return NotFound();
         }
 
@@ -141,7 +142,7 @@ public class UserController : ControllerBase
     
         return NoContent();
         }catch (Exception ex){
-            LogError(ex, $"Error al actualizar el usuario");
+            _logError.LogErrorMethod(ex, $"Error al actualizar el usuario");
             return StatusCode(500, "Error interno del servidor");
         }
     }
@@ -153,7 +154,7 @@ public class UserController : ControllerBase
         var user = userService.GetUser(id);
     
         if (user == null){
-            LogError(new Exception($"No se encontró el usuario con id {id}"), "Error al intentar eliminar el usuario");
+            _logError.LogErrorMethod(new Exception($"No se encontró el usuario con id {id}"), "Error al intentar eliminar el usuario");
             return NotFound();
         }
         
@@ -161,7 +162,7 @@ public class UserController : ControllerBase
     
         return NoContent();
         }catch (Exception ex){
-            LogError(ex, $"Error al eliminar el usuario");
+            _logError.LogErrorMethod(ex, $"Error al eliminar el usuario");
             return StatusCode(500, "Error interno del servidor");
         }
     }
@@ -171,27 +172,15 @@ public class UserController : ControllerBase
         try{
         var tickets = userService.GetUserTickets(id);
         if(tickets== null || tickets.Count==0){
-            LogError(new Exception($"No se encontraron tickets del usuario con id {id}"), "Error al intentar obtener los tickets");
+            _logError.LogErrorMethod(new Exception($"No se encontraron tickets del usuario con id {id}"), "Error al intentar obtener los tickets");
             return NotFound();
         }else{
             return tickets;
         }
         }catch (Exception ex){
-            LogError(ex, $"Error al obtener los tickets");
+            _logError.LogErrorMethod(ex, $"Error al obtener los tickets");
             return StatusCode(500, "Error interno del servidor");
         }
-    }
-
-     //logger
-    private void LogError(Exception ex, string message)
-    {
-        _logger.LogError(ex, message);
-        
-        var logFilePath = "../logs/error-log.txt";
-        System.IO.File.AppendAllText(logFilePath, $"{DateTime.Now} - {message}: {ex.Message}\n");
-
-        Console.WriteLine($"Error al escribir en el log: {ex.Message}");
-
     }
 
 }

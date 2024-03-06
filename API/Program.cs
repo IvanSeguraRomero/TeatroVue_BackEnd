@@ -1,6 +1,7 @@
 using TeatroWeb.Data;
 using TeatroWeb.Business;
 using Microsoft.EntityFrameworkCore;
+using TeatroWeb.common;
 
     var builder = WebApplication.CreateBuilder(args);
     var connectionString = builder.Configuration.GetConnectionString("ServerDB");
@@ -20,6 +21,8 @@ using Microsoft.EntityFrameworkCore;
     // User
     builder.Services.AddScoped<IUserService, UserService>(); 
     builder.Services.AddScoped<IUserRepository, UserEFRepository>();
+
+    builder.Services.AddScoped<IlogError,LogErrorClass>();
 
     builder.Services.AddControllers();
 

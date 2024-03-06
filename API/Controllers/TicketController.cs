@@ -1,7 +1,7 @@
 using TeatroWeb.Models;
 using TeatroWeb.Business;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using TeatroWeb.common;
 
 namespace TeatroWeb.Controllers;
 
@@ -9,11 +9,11 @@ namespace TeatroWeb.Controllers;
 [Route("[controller]")]
 public class TicketController : ControllerBase
 {
-    private readonly ILogger<TicketController> _logger;
     private readonly ITicketService? ticketService;
-    public TicketController(ILogger<TicketController> logger,ITicketService? _ticketService)
+    private readonly IlogError _logError;
+    public TicketController(IlogError logError,ITicketService? _ticketService)
     {
-        _logger=logger;
+        _logError=logError;
         ticketService=_ticketService;
     }
 
@@ -24,7 +24,7 @@ public class TicketController : ControllerBase
             return ticketService.GetAll();
       }catch (Exception ex)
         {
-            LogError(ex, $"Error al obtener la información de los tickets");
+            _logError.LogErrorMethod(ex, $"Error al obtener la información de los tickets");
             return StatusCode(500, "Error interno del servidor");
         }
     }
@@ -37,14 +37,14 @@ public class TicketController : ControllerBase
         var ticket = ticketService.GetTicket(id);
 
         if(ticket == null){
-            LogError(new Exception("No se encontró el ticket"), $"Error al obtener la información del ticket con ID {id}");
+            _logError.LogErrorMethod(new Exception("No se encontró el ticket"), $"Error al obtener la información del ticket con ID {id}");
             return NotFound();
         }
 
         return ticket;
         }catch (Exception ex)
         {
-            LogError(ex, $"Error al obtener la información del ticket con el id {id}");
+            _logError.LogErrorMethod(ex, $"Error al obtener la información del ticket con el id {id}");
             return StatusCode(500, "Error interno del servidor");
         }
     }
@@ -55,7 +55,7 @@ public class TicketController : ControllerBase
         try{           
         if (!ModelState.IsValid)
         {
-            LogError(new Exception("No se pudo crear el ticket"), $"Error al almacenar la información del ticket {ModelState}");
+            _logError.LogErrorMethod(new Exception("No se pudo crear el ticket"), $"Error al almacenar la información del ticket {ModelState}");
             return BadRequest(ModelState);
         }
         var ticket= new Ticket{
@@ -70,7 +70,7 @@ public class TicketController : ControllerBase
         ticketService.AddTicket(ticket);
         return CreatedAtAction(nameof(Get), new { id = ticket.id }, ticketDTO);
         }catch(Exception ex){
-                LogError(ex, "Error al crear un nuevo ticket");
+                _logError.LogErrorMethod(ex, "Error al crear un nuevo ticket");
                 return StatusCode(500, "Error interno del servidor");
         }
     }
@@ -81,7 +81,7 @@ public class TicketController : ControllerBase
         try{
         var existingTicket = ticketService.GetTicket(id);
         if(existingTicket == null){
-            LogError(new Exception("No se encontró el ticket"), $"Error al intentar acutalizar el ticket con el id {id}");
+            _logError.LogErrorMethod(new Exception("No se encontró el ticket"), $"Error al intentar acutalizar el ticket con el id {id}");
             return NotFound();
         }
         var newTicketUpdated=new Ticket{
@@ -110,7 +110,7 @@ public class TicketController : ControllerBase
     
         return NoContent();
         }catch(Exception ex){
-                LogError(ex, "Error al actualizar el ticket");
+                _logError.LogErrorMethod(ex, "Error al actualizar el ticket");
                 return StatusCode(500, "Error interno del servidor");
         }
     }
@@ -122,7 +122,7 @@ public class TicketController : ControllerBase
         var ticket = ticketService.GetTicket(id);
     
         if (ticket is null){
-            LogError(new Exception($"No se encontró el ticket con ID {id}"), "Error al intentar eliminar el ticket");
+            _logError.LogErrorMethod(new Exception($"No se encontró el ticket con ID {id}"), "Error al intentar eliminar el ticket");
             return NotFound();
         }
         
@@ -130,20 +130,9 @@ public class TicketController : ControllerBase
     
         return NoContent();
         }catch(Exception ex){
-                LogError(ex, "Error al eliminar el ticket");
+                _logError.LogErrorMethod(ex, "Error al eliminar el ticket");
                 return StatusCode(500, "Error interno del servidor");
         }
     }
 
-     //logger
-    private void LogError(Exception ex, string message)
-    {
-        _logger.LogError(ex, message);
-        
-        var logFilePath = "../logs/error-log.txt";
-        System.IO.File.AppendAllText(logFilePath, $"{DateTime.Now} - {message}: {ex.Message}\n");
-
-        Console.WriteLine($"Error al escribir en el log: {ex.Message}");
-
-    }
 }

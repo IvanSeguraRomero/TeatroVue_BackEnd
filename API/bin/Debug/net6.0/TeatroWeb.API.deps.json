@@ -11,7 +11,8 @@
           "Microsoft.EntityFrameworkCore.Design": "6.0.0",
           "Swashbuckle.AspNetCore": "6.5.0",
           "TeatroWeb.Business": "1.0.0",
-          "TeatroWeb.Models": "1.0.0"
+          "TeatroWeb.Models": "1.0.0",
+          "TeatroWeb.common": "1.0.0"
         },
         "runtime": {
           "TeatroWeb.API.dll": {}
@@ -540,6 +541,14 @@
           "TeatroWeb.Business.dll": {}
         }
       },
+      "TeatroWeb.common/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "6.0.0"
+        },
+        "runtime": {
+          "TeatroWeb.common.dll": {}
+        }
+      },
       "TeatroWeb.Data/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0",
@@ -935,6 +944,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "TeatroWeb.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TeatroWeb.common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -58,3 +58,8 @@
 08/03/2024 17:25:24 - Error al obtener la información de los tickets: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
 08/03/2024 17:25:24 - Error al obtener la información de los tickets: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
 08/03/2024 17:25:25 - Error al obtener la información de los tickets: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+09/03/2024 17:51:00 - Error al obtener la información del ticket con ID 2: No se encontró el ticket
+09/03/2024 18:00:20 - Error al obtener la información del ticket con ID 1: No se encontró el ticket
+09/03/2024 18:25:45 - Error al obtener la información de la obra con ID 13: No se encontró la obra
+09/03/2024 18:38:19 - Error al obtener la información de la obra con ID 13: No se encontró la obra
+09/03/2024 18:38:36 - Error al intentar acutalizar la obra con el id 13: No se encontró la obra

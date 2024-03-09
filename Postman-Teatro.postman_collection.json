@@ -1,0 +1,1436 @@
+{
+	"info": {
+		"_postman_id": "c9cafab8-9bdb-40e3-ac5e-336d01f83f29",
+		"name": "Postman-Teatro",
+		"description": "Theatre play for 2ºDAW project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27624059"
+	},
+	"item": [
+		{
+			"name": "Ticket",
+			"item": [
+				{
+					"name": "GetAllTicket",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7121/ticket",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"ticket"
+							]
+						},
+						"description": "This endpoint makes an HTTP GET request to retrieve ticket information from the specified URL. The request does not contain a request body as it is a GET request. The response body includes an array of ticket objects, each containing the following properties:\n\n- \"id\": The unique identifier of the ticket.\n- \"ticketRow\": The row number of the ticket.\n- \"ticketColumn\": The column number of the ticket.\n- \"price\": The price of the ticket.\n- \"scheduleTicket\": The schedule information related to the ticket.\n- \"userId\": The unique identifier of the user associated with the ticket.\n- \"playId\": The unique identifier of the play associated with the ticket."
+					},
+					"response": [
+						{
+							"name": "GetAllTicket",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7121/ticket",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"ticket"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:35:51 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"ticketRow\": 4,\n        \"ticketColumn\": 1,\n        \"price\": 25,\n        \"scheduleTicket\": \"2024-03-09T16:00:00\",\n        \"userId\": 1,\n        \"playId\": 1\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "PostTicket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ticketRow\": 1,\r\n  \"ticketColumn\": 1,\r\n  \"price\": 25,\r\n  \"scheduleTicket\": \"2024-03-09T09:30\",\r\n  \"userId\": 1,\r\n  \"playId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7121/ticket",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"ticket"
+							]
+						},
+						"description": "### Ticket Creation\n\nThis endpoint allows the creation of a new ticket.\n\n**Request Body**\n\n- ticketRow (number): The row number of the ticket.\n- ticketColumn (number): The column number of the ticket.\n- price (number): The price of the ticket.\n- scheduleTicket (string): The schedule for the ticket.\n- userId (number): The ID of the user.\n- playId (number): The ID of the play.\n    \n\n**Response**\n\n``` json\n{\n  \"ticketRow\": 0,\n  \"ticketColumn\": 0,\n  \"price\": 0,\n  \"scheduleTicket\": \"\",\n  \"userId\": 0,\n  \"playId\": 0\n}\n\n ```\n\n**Response JSON Schema**\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"ticketRow\": { \"type\": \"number\" },\n    \"ticketColumn\": { \"type\": \"number\" },\n    \"price\": { \"type\": \"number\" },\n    \"scheduleTicket\": { \"type\": \"string\" },\n    \"userId\": { \"type\": \"number\" },\n    \"playId\": { \"type\": \"number\" }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "PostTicket",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"ticketRow\": 1,\r\n  \"ticketColumn\": 1,\r\n  \"price\": 25,\r\n  \"scheduleTicket\": \"2024-03-09T09:30\",\r\n  \"userId\": 1,\r\n  \"playId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7121/ticket",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"ticket"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:35:58 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Location",
+									"value": "https://localhost:7121/Ticket/3"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ticketRow\": 1,\n    \"ticketColumn\": 1,\n    \"price\": 25,\n    \"scheduleTicket\": \"2024-03-09T09:30:00\",\n    \"userId\": 1,\n    \"playId\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "GetOneTicket",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7121/ticket/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"ticket",
+								"3"
+							]
+						},
+						"description": "This endpoint retrieves the details of a specific ticket with ID 3. The response for this request is a JSON object with the following properties:\n\n- id (number): The ID of the ticket.\n- ticketRow (number): The row number of the ticket.\n- ticketColumn (number): The column number of the ticket.\n- price (number): The price of the ticket.\n- scheduleTicket (string): The schedule ticket information.\n- userId (number): The ID of the user associated with the ticket.\n- playId (number): The ID of the play associated with the ticket.\n    \n\nHere is the JSON schema for the response:\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": { \"type\": \"number\" },\n    \"ticketRow\": { \"type\": \"number\" },\n    \"ticketColumn\": { \"type\": \"number\" },\n    \"price\": { \"type\": \"number\" },\n    \"scheduleTicket\": { \"type\": \"string\" },\n    \"userId\": { \"type\": \"number\" },\n    \"playId\": { \"type\": \"number\" }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "GetOneTicket",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7121/ticket/3",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"ticket",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:36:08 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"ticketRow\": 1,\n    \"ticketColumn\": 1,\n    \"price\": 25,\n    \"scheduleTicket\": \"2024-03-09T09:30:00\",\n    \"userId\": 1,\n    \"playId\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "PutTicket",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ticketRow\": 4,\r\n  \"ticketColumn\": 1,\r\n  \"price\": 25,\r\n  \"scheduleTicket\": \"2024-03-09T16:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7121/ticket/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"ticket",
+								"2"
+							]
+						},
+						"description": "This endpoint makes an HTTP PUT request to update the ticket information for a specific ticket with ID 2. The request body has to contain at least one of the following details of the ticket : ticketRow, ticketColumn, price, and scheduleTicket information.\n\n### Response\n\nThe response of this request can be documented as a JSON schema. It should include the schema definition for the properties returned in the response, such as ticket ID, updated ticketRow, ticketColumn, price, and scheduleTicket.\n\nExample JSON schema for the response:\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"ticketId\": {\n      \"type\": \"string\"\n    },\n    \"updatedTicketRow\": {\n      \"type\": \"integer\"\n    },\n    \"updatedTicketColumn\": {\n      \"type\": \"integer\"\n    },\n    \"updatedPrice\": {\n      \"type\": \"number\"\n    },\n    \"updatedScheduleTicket\": {\n      \"type\": \"string\"\n    }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "PutTicket",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"ticketRow\": 4,\r\n  \"ticketColumn\": 1,\r\n  \"price\": 25,\r\n  \"scheduleTicket\": \"2024-03-09T16:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7121/ticket/2",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"ticket",
+										"2"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:36:58 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "DeleteTicket",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7121/ticket/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"ticket",
+								"3"
+							]
+						},
+						"description": "### Delete Ticket\n\nThis endpoint is used to delete a specific ticket.\n\n#### Request\n\n- Method: DELETE\n- Endpoint: `/ticket/3`\n    \n\n#### Response\n\nThe response for this request follows the JSON schema below:\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"message\": {\n      \"type\": \"string\"\n    }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "DeleteTicket",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7121/ticket/3",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"ticket",
+										"3"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:37:19 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			],
+			"description": "Ticket for the play's of the theatre"
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GetAllUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7121/user",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"user"
+							]
+						},
+						"description": "This endpoint makes an HTTP GET request to retrieve user information from [https://localhost:7121/user](https://localhost:7121/user). The response for this request is a JSON object with various fields such as id, username, surname, passwd, direction, email, notes, tlf, payment, and tickets. Each ticket object within the tickets array includes id, ticketRow, ticketColumn, price, scheduleTicket, userId, and playId. Below is the JSON schema for the response:\n\n``` json\n{\n  \"type\": \"array\",\n  \"items\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"id\": { \"type\": \"number\" },\n      \"username\": { \"type\": \"string\" },\n      \"surname\": { \"type\": \"string\" },\n      \"passwd\": { \"type\": \"string\" },\n      \"direction\": { \"type\": \"string\" },\n      \"email\": { \"type\": \"string\" },\n      \"notes\": { \"type\": \"string\" },\n      \"tlf\": { \"type\": \"number\" },\n      \"payment\": { \"type\": \"string\" },\n      \"tickets\": {\n        \"type\": \"array\",\n        \"items\": {\n          \"type\": \"object\",\n          \"properties\": {\n            \"id\": { \"type\": \"number\" },\n            \"ticketRow\": { \"type\": \"number\" },\n            \"ticketColumn\": { \"type\": \"number\" },\n            \"price\": { \"type\": \"number\" },\n            \"scheduleTicket\": { \"type\": \"string\" },\n            \"userId\": { \"type\": \"number\" },\n            \"playId\": { \"type\": \"number\" }\n          }\n        }\n      }\n    }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "GetAllUser",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7121/user",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:31:59 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"username\": \"admin\",\n        \"surname\": \"admin\",\n        \"passwd\": \"passexample\",\n        \"direction\": \"addressexample\",\n        \"email\": \"admin@svalero.com\",\n        \"notes\": \"Note 1\",\n        \"tlf\": 123456789,\n        \"payment\": \"Paypal\",\n        \"tickets\": [\n            {\n                \"id\": 2,\n                \"ticketRow\": 4,\n                \"ticketColumn\": 1,\n                \"price\": 25,\n                \"scheduleTicket\": \"2024-03-09T16:00:00\",\n                \"userId\": 1,\n                \"playId\": 1\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"username\": \"prueba\",\n        \"surname\": \"pruebaapellido\",\n        \"passwd\": \"passwdprueba\",\n        \"direction\": \"avenidaflores\",\n        \"email\": \"prueba@gmail.com\",\n        \"notes\": \"probando contenidos\",\n        \"tlf\": 765887654,\n        \"payment\": \"Paypal\",\n        \"tickets\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "PostUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"prueba\",\r\n  \"surname\": \"pruebaapellido\",\r\n  \"passwd\": \"passwdprueba\",\r\n  \"direction\": \"avenidaflores\",\r\n  \"email\": \"prueba@gmail.com\",\r\n  \"notes\": \"probando contenidos\",\r\n  \"tlf\": 765887654,\r\n  \"payment\": \"credit card\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7121/user",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"user"
+							]
+						},
+						"description": "\nThis endpoint allows you to create a new user via an HTTP POST request to https://localhost:7121/user. The request should include a JSON payload in the raw request body type, with parameters for username, surname, passwd, direction, email, notes, tlf, and payment.\n\n### Response\nThe response for this request is a JSON object with the following schema:\n```json\n{\n    \"id\": 0,\n    \"username\": \"\",\n    \"surname\": \"\",\n    \"passwd\": \"\",\n    \"direction\": \"\",\n    \"email\": \"\",\n    \"notes\": \"\",\n    \"tlf\": 0,\n    \"payment\": \"\",\n    \"tickets\": []\n}\n```\nThis JSON schema represents the structure of the response object returned after creating a new user.\n"
+					},
+					"response": [
+						{
+							"name": "PostUser",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\": \"prueba\",\r\n  \"surname\": \"pruebaapellido\",\r\n  \"passwd\": \"passwdprueba\",\r\n  \"direction\": \"avenidaflores\",\r\n  \"email\": \"prueba@gmail.com\",\r\n  \"notes\": \"probando contenidos\",\r\n  \"tlf\": 765887654,\r\n  \"payment\": \"credit card\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7121/user",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:32:26 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Location",
+									"value": "https://localhost:7121/User/4"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"username\": \"prueba\",\n    \"surname\": \"pruebaapellido\",\n    \"passwd\": \"passwdprueba\",\n    \"direction\": \"avenidaflores\",\n    \"email\": \"prueba@gmail.com\",\n    \"notes\": \"probando contenidos\",\n    \"tlf\": 765887654,\n    \"payment\": \"credit card\",\n    \"tickets\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "GetOneUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7121/user/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"user",
+								"3"
+							]
+						},
+						"description": "This endpoint makes an HTTP GET request to retrieve user information based on the provided user ID. The response will be in JSON format and will include the user's ID, username, surname, password, address, email, notes, phone number, payment details, and a list of tickets associated with the user.\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": { \"type\": \"integer\" },\n    \"username\": { \"type\": \"string\" },\n    \"surname\": { \"type\": \"string\" },\n    \"passwd\": { \"type\": \"string\" },\n    \"direction\": { \"type\": \"string\" },\n    \"email\": { \"type\": \"string\" },\n    \"notes\": { \"type\": \"string\" },\n    \"tlf\": { \"type\": \"integer\" },\n    \"payment\": { \"type\": \"string\" },\n    \"tickets\": { \"type\": \"array\" }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "GetOneUser",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7121/user/3",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"user",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:33:35 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"username\": \"prueba\",\n    \"surname\": \"pruebaapellido\",\n    \"passwd\": \"passwdprueba\",\n    \"direction\": \"avenidaflores\",\n    \"email\": \"prueba@gmail.com\",\n    \"notes\": \"probando contenidos\",\n    \"tlf\": 765887654,\n    \"payment\": \"Paypal\",\n    \"tickets\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "PutUser",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"surname\": \"admin\",\r\n    \"passwd\": \"passexample\",\r\n    \"direction\": \"addressexample\",\r\n    \"email\": \"admin@svalero.com\",\r\n    \"notes\": \"Note 1\",\r\n    \"tlf\": 123456789,\r\n    \"payment\": \"Paypal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7121/user/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"user",
+								"3"
+							]
+						},
+						"description": "This endpoint makes an HTTP PUT request to update user information at [https://localhost:7121/user/3](https://localhost:7121/user/3). The request body has to contain at least one of the following details of the user : username, surname, passwd, direction, email, notes, tlf, and payment.\n\n### Response\n\nThe response of this request is expected to be a JSON object representing the updated user information. To document the response, you can use the following JSON schema:\n\n``` json\n{\n    \"type\": \"object\",\n    \"properties\": {\n        \"userId\": {\n            \"type\": \"string\"\n        },\n        \"username\": {\n            \"type\": \"string\"\n        },\n        \"surname\": {\n            \"type\": \"string\"\n        },\n        \"email\": {\n            \"type\": \"string\",\n            \"format\": \"email\"\n        },\n        \"notes\": {\n            \"type\": \"string\"\n        },\n        \"tlf\": {\n            \"type\": \"integer\"\n        },\n        \"payment\": {\n            \"type\": \"string\"\n        }\n        // Add more properties as per the actual response\n    }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "PutUser",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"admin\",\r\n    \"surname\": \"admin\",\r\n    \"passwd\": \"passexample\",\r\n    \"direction\": \"addressexample\",\r\n    \"email\": \"admin@svalero.com\",\r\n    \"notes\": \"Note 1\",\r\n    \"tlf\": 123456789,\r\n    \"payment\": \"Paypal\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7121/user/3",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"user",
+										"3"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:34:24 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7121/user/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"user",
+								"4"
+							]
+						},
+						"description": "### Delete User\n\nThis endpoint is used to delete a specific user by their ID.\n\n#### Request\n\n- Method: DELETE\n- Endpoint: `https://localhost:7121/user/4`\n    \n\n#### Response\n\nThe response for this request follows the JSON schema below:\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"message\": {\n      \"type\": \"string\"\n    }\n  }\n}\n\n ```\n\nThe response contains a `message` property indicating the result of the deletion operation."
+					},
+					"response": [
+						{
+							"name": "DeleteUser",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7121/user/4",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"user",
+										"4"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:33:05 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "GetUserTickets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7121/user/1/tickets",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"user",
+								"1",
+								"tickets"
+							]
+						},
+						"description": "This endpoint retrieves the tickets for a specific user with the given user ID. The response will be a JSON array containing ticket objects, where each ticket object includes the following properties:\n\n- \"id\" (number): The unique identifier of the ticket.\n- \"ticketRow\" (number): The row number of the ticket.\n- \"ticketColumn\" (number): The column number of the ticket.\n- \"price\" (number): The price of the ticket.\n- \"scheduleTicket\" (string): The schedule information related to the ticket.\n- \"userId\" (number): The user ID associated with the ticket.\n- \"playId\" (number): The ID of the play associated with the ticket."
+					},
+					"response": [
+						{
+							"name": "GetUserTickets",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7121/user/1/tickets",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"user",
+										"1",
+										"tickets"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:35:23 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"ticketRow\": 4,\n        \"ticketColumn\": 1,\n        \"price\": 25,\n        \"scheduleTicket\": \"2024-03-09T16:00:00\",\n        \"userId\": 1,\n        \"playId\": 1\n    }\n]"
+						}
+					]
+				}
+			],
+			"description": "User for the credentials of the theatre"
+		},
+		{
+			"name": "Play",
+			"item": [
+				{
+					"name": "GetAllPlay",
+					"item": [
+						{
+							"name": "GetAllPlay",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7121/play",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"play"
+									]
+								},
+								"description": "### Play Details API\n\nThis API endpoint retrieves details of a play.\n\n#### Request\n\n- Method: GET\n- Endpoint: `https://localhost:7121/play`\n    \n\n#### Response\n\nThe response will be a JSON object with the following schema:\n\n``` json\n{\n    \"type\": \"array\",\n    \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n            \"id\": {\n                \"type\": \"integer\"\n            },\n            \"title\": {\n                \"type\": \"string\"\n            },\n            \"descriptionPlay\": {\n                \"type\": \"string\"\n            },\n            \"synopsis\": {\n                \"type\": \"string\"\n            },\n            \"director\": {\n                \"type\": \"string\"\n            },\n            \"genre\": {\n                \"type\": \"string\"\n            },\n            \"tickets\": {\n                \"type\": \"array\",\n                \"items\": {\n                    \"type\": \"object\",\n                    \"properties\": {\n                        \"id\": {\n                            \"type\": \"integer\"\n                        },\n                        \"ticketRow\": {\n                            \"type\": \"integer\"\n                        },\n                        \"ticketColumn\": {\n                            \"type\": \"integer\"\n                        },\n                        \"price\": {\n                            \"type\": \"integer\"\n                        },\n                        \"scheduleTicket\": {\n                            \"type\": \"string\"\n                        },\n                        \"userId\": {\n                            \"type\": \"integer\"\n                        },\n                        \"playId\": {\n                            \"type\": \"integer\"\n                        }\n                    }\n                }\n            }\n        }\n    }\n}\n\n ```"
+							},
+							"response": [
+								{
+									"name": "GetAllPlay",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://localhost:7121/play",
+											"protocol": "https",
+											"host": [
+												"localhost"
+											],
+											"port": "7121",
+											"path": [
+												"play"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 09 Mar 2024 16:39:21 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"La Máscara\",\n        \"descriptionPlay\": \"Una obra intrigante que explora los misterios del teatro clásico.\",\n        \"synopsis\": \"En el bullicioso mundo teatral del siglo XIX, un enmascarado misterioso acecha entre bambalinas, desentrañando secretos oscuros y rivalidades encubiertas. Con giros inesperados, 'La Máscara Oculta' transporta a la audiencia a un viaje lleno de intriga y emoción.\",\n        \"director\": \"Ramón Peón (La Habana, Cuba; 1897 - San Juan, Puerto Rico; 1971) fue un periodista, bailarín, músico, productor, director, camarógrafo, actor y guionista de cine cubano. Se inició como camarógrafo en los antiguos estudios Kalem y Vitagraph, de Nueva York.\",\n        \"genre\": \"Horror\",\n        \"tickets\": [\n            {\n                \"id\": 2,\n                \"ticketRow\": 4,\n                \"ticketColumn\": 1,\n                \"price\": 25,\n                \"scheduleTicket\": \"2024-03-09T16:00:00\",\n                \"userId\": 1,\n                \"playId\": 1\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"title\": \"En el Escenario\",\n        \"descriptionPlay\": \"Una experiencia teatral única para toda la familia.\",\n        \"synopsis\": \"Acompaña a personajes entrañables en un viaje mágico a través de cuentos clásicos y nuevos relatos. 'Cuentos en el Escenario' combina la magia del teatro con la nostalgia de los cuentos, creando un espectáculo encantador para todas las edades.\",\n        \"director\": \"Juanjo Pastor es un joven actor, que siempre ha tenido claro que quería dedicarse al mundo del espectáculo. Desde bien pequeño, en el colegio ya tenía teatro como asignatura extraescolar, y  también más tarde en el instituto.\",\n        \"genre\": \"Drama\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 3,\n        \"title\": \"La Noche\",\n        \"descriptionPlay\": \"Un thriller teatral que mantendrá al público al borde de sus asientos.\",\n        \"synopsis\": \"En una ciudad envuelta en sombras, un detective atormentado se enfrenta a su caso más oscuro. 'El Misterio de la Noche' es un fascinante juego de ingenio y suspense que desafía al público a resolver el enigma antes de que se revele la verdad impactante.\",\n        \"director\": \"Abel González Melo (La Habana, 14 de enero de 1980) es doctor en Estudios Literarios y máster en Teatro por la Universidad Complutense de Madrid, así como licenciado en Teatrología por el Instituto Superior de Arte de Cuba.\",\n        \"genre\": \"Thriller\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 4,\n        \"title\": \"Romeo y Julieta\",\n        \"descriptionPlay\": \"Una versión contemporánea del clásico de Shakespeare con un giro moderno.\",\n        \"synopsis\": \"En las bulliciosas calles de la ciudad actual, dos almas destinadas se encuentran en medio de la rivalidad de sus familias. 'Romeo y Julieta Reimaginados' fusiona la poesía de Shakespeare con la vibrante energía de la cultura urbana, explorando el amor y la tragedia en el siglo XXI.\",\n        \"director\": \"Mark Anthony Luhrmann (Sídney, Nueva Gales del Sur, 17 de septiembre de 1962), conocido como Baz Luhrmann, es un actor, director, guionista y productor de cine australiano. Es ampliamente considerado como uno de los más destacados directores de cine.\",\n        \"genre\": \"Romance\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 5,\n        \"title\": \"Los Sueños\",\n        \"descriptionPlay\": \"Una odisea surrealista a través de la mente humana.\",\n        \"synopsis\": \"Sumérgete en el fascinante paisaje de los sueños con 'El Jardín de los Sueños'. Esta obra surrealista lleva al público a un viaje introspectivo a medida que los personajes navegan por los recovecos de la mente humana, explorando deseos, miedos y esperanzas ocultas.\",\n        \"director\": \"Gerardo Vera Perales (Miraflores de la Sierra (Madrid) 10 de marzo de 1947 - 20 de septiembre de 2020)fue un escenógrafo, diseñador de vestuario, actor y director de cine y de teatro español. Dirigió el espectáculo 'Azabache' en la Expo92 de Sevilla, cosechando un fabuloso éxito.\",\n        \"genre\": \"Drama\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 6,\n        \"title\": \"El Último Acto\",\n        \"descriptionPlay\": \"Un drama conmovedor sobre la vida, la pérdida y la redención.\",\n        \"synopsis\": \"En un pequeño teatro al borde de la quiebra, un grupo de actores veteranos se reúne para una última actuación que cambiará sus vidas para siempre. 'El Último Acto' es un conmovedor tributo al poder del arte y la capacidad de encontrar significado incluso en los momentos más oscuros.\",\n        \"director\": \"El último acto es el nuevo largometraje de Kenneth Branagh. Un homenaje a los últimos años de William Shakespeare. Cómo, por qué y en qué circunstancias decidió, una de las grandes figuras de la literatura universal, dejar el teatro y volver al pueblo con su familia.\",\n        \"genre\": \"Drama\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Sinfonía de Risas\",\n        \"descriptionPlay\": \"Una comedia musical llena de risas y alegría.\",\n        \"synopsis\": \"En un mundo donde la risa es la moneda de cambio, 'Sinfonía de Risas' lleva al público a un viaje musical hilarante. Con números pegajosos y situaciones cómicas, esta obra es un antídoto perfecto para el estrés diario, ofreciendo una experiencia teatral ligera y divertida.\",\n        \"director\": \"Nacido en Granada, Zapata inició sus estudios de canto en Madrid con Toñi Rosado Casas y los perfeccionó con Ana Luisa Chova en el Conservatorio Superior de Música de Valencia. Ha asistido a clases magistrales y cursos de perfeccionamiento con Yelena Obraztsova, Pedro Lavirgen, Renata Scotto.\",\n        \"genre\": \"Comedia\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 8,\n        \"title\": \"El Despertar\",\n        \"descriptionPlay\": \"Un thriller psicológico que desafía la percepción de la realidad.\",\n        \"synopsis\": \"En un manicomio abandonado, un psiquiatra se enfrenta a los fantasmas de su pasado mientras trata a un paciente con una conexión sorprendente. 'El Despertar de las Sombras' explora los límites de la cordura y la verdad en un viaje psicológico inolvidable.\",\n        \"director\": \"Iván Morales inició su trayectoria en el underground español como editor de fanzines y locutor de radios libres en la década de los ochenta, para iniciar en su infancia una carrera de actor que le ha llevado a participar en series de televisión como Nissaga: Amistades peligrosas o Poblenou.\",\n        \"genre\": \"Thriller\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 9,\n        \"title\": \"Las Emociones\",\n        \"descriptionPlay\": \"Una experiencia teatral visualmente impactante que celebra la diversidad emocional.\",\n        \"synopsis\": \"Con un enfoque innovador en la expresión emocional, 'Caleidoscopio de Emociones' fusiona la danza, el teatro y la tecnología para llevar al público a un viaje visualmente deslumbrante. Desde la euforia hasta la melancolía, esta obra invita a explorar la complejidad de las emociones humanas.\",\n        \"director\": \"David Fernández Troncoso, desde que debutó con diez años, su vida profesional ha estado dedicada en exclusiva al teatro. Por su carrera pasan nombres como Titirimundi, Instituto del Teatro, Comedia de Buenos Aires, CAT…\",\n        \"genre\": \"Drama\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Legado del Escenario\",\n        \"descriptionPlay\": \"Un homenaje a los clásicos del teatro a lo largo de los siglos.\",\n        \"synopsis\": \"A través de escenas icónicas y monólogos inolvidables, 'El Legado del Escenario' rinde homenaje a las obras maestras que han definido el teatro a lo largo de la historia. Desde Shakespeare hasta Beckett, esta obra es un recordatorio conmovedor de la perdurabilidad del arte escénico.\",\n        \"director\": \"Andrés Lima Fernández de Toro es un actor y director teatral español vinculado a la compañía de teatro Animalario. El 30 de septiembre de 2019 fue galardonado con el Premio Nacional de Teatro.Comienza su carrera como actor y director teatral, desde muy temprana edad.\",\n        \"genre\": \"Historia\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 11,\n        \"title\": \"El Espejo Roto\",\n        \"descriptionPlay\": \"Un drama introspectivo sobre la identidad y el autodescubrimiento.\",\n        \"synopsis\": \"Cuando un espejo mágico revela versiones alternativas de sí mismos, los personajes de 'El Espejo Roto' se ven obligados a confrontar sus verdaderas identidades. Esta obra provocativa invita a la audiencia a reflexionar sobre la percepción y la realidad en un mundo lleno de reflejos fragmentados.\",\n        \"director\": \"Estudios de Teatro en el Taller de Actores Profesionales que dirigió José Monleón en la RESAD (Real Escuela Superior de Arte Dramático) Madrid -España. Pertenece al grupo de investigación en Estéticas Urbanas, con artículos como Los Demonios hacen catarsis en el Palacio de Justicia.\",\n        \"genre\": \"Drama\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 12,\n        \"title\": \"Sueños\",\n        \"descriptionPlay\": \"Una epopeya fantástica que desafía la realidad y la imaginación.\",\n        \"synopsis\": \"En un reino donde los sueños tienen el poder de cambiar la realidad, un grupo de valientes aventureros emprende una búsqueda épica. 'Cazadores de Sueños' combina elementos de fantasía, acción y magia para ofrecer una experiencia teatral que transporta al público a mundos inexplorados.\",\n        \"director\": \"Gerardo Vera Perales (Miraflores de la Sierra (Madrid) 10 de marzo de 1947 - 20 de septiembre de 2020)fue un escenógrafo, diseñador de vestuario, actor y director de cine y de teatro español. Dirigió el espectáculo 'Azabache' en la Expo92 de Sevilla, cosechando un fabuloso éxito.\",\n        \"genre\": \"Fantasía\",\n        \"tickets\": []\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "GetAllPlayGenre",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7121/play?genre=horror",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"play"
+									],
+									"query": [
+										{
+											"key": "genre",
+											"value": "horror"
+										}
+									]
+								},
+								"description": "### Get Play by Genre\n\nThis endpoint retrieves play details based on the specified genre.\n\n#### Request\n\n- Method: GET\n- Endpoint: `https://localhost:7121/play`\n- Query Parameters:\n    - `genre` (string, required): Specifies the genre of the play.\n\n#### Response\n\nThe response for this request is a JSON array containing play details. Each play object in the array has the following properties:\n\n- `id` (number): The unique identifier of the play.\n- `title` (string): The title of the play.\n- `descriptionPlay` (string): The description of the play.\n- `synopsis` (string): A brief synopsis of the play.\n- `director` (string): The director of the play.\n- `genre` (string): The genre of the play.\n- `tickets` (array): An array of ticket objects, each containing the following properties:\n    - `id` (number): The unique identifier of the ticket.\n    - `ticketRow` (number): The row number of the ticket.\n    - `ticketColumn` (number): The column number of the ticket.\n    - `price` (number): The price of the ticket.\n    - `scheduleTicket` (string): The schedule for the ticket.\n    - `userId` (number): The unique identifier of the user who booked the ticket.\n    - `playId` (number): The unique identifier of the play for which the ticket is booked.\n\n#### JSON Schema\n\n``` json\n{\n  \"type\": \"array\",\n  \"items\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"id\": { \"type\": \"number\" },\n      \"title\": { \"type\": \"string\" },\n      \"descriptionPlay\": { \"type\": \"string\" },\n      \"synopsis\": { \"type\": \"string\" },\n      \"director\": { \"type\": \"string\" },\n      \"genre\": { \"type\": \"string\" },\n      \"tickets\": {\n        \"type\": \"array\",\n        \"items\": {\n          \"type\": \"object\",\n          \"properties\": {\n            \"id\": { \"type\": \"number\" },\n            \"ticketRow\": { \"type\": \"number\" },\n            \"ticketColumn\": { \"type\": \"number\" },\n            \"price\": { \"type\": \"number\" },\n            \"scheduleTicket\": { \"type\": \"string\" },\n            \"userId\": { \"type\": \"number\" },\n            \"playId\": { \"type\": \"number\" }\n          }\n        }\n      }\n    }\n  }\n}\n\n ```"
+							},
+							"response": [
+								{
+									"name": "GetAllPlayGenre",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://localhost:7121/play?genre=horror",
+											"protocol": "https",
+											"host": [
+												"localhost"
+											],
+											"port": "7121",
+											"path": [
+												"play"
+											],
+											"query": [
+												{
+													"key": "genre",
+													"value": "horror"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 09 Mar 2024 16:39:26 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"La Máscara\",\n        \"descriptionPlay\": \"Una obra intrigante que explora los misterios del teatro clásico.\",\n        \"synopsis\": \"En el bullicioso mundo teatral del siglo XIX, un enmascarado misterioso acecha entre bambalinas, desentrañando secretos oscuros y rivalidades encubiertas. Con giros inesperados, 'La Máscara Oculta' transporta a la audiencia a un viaje lleno de intriga y emoción.\",\n        \"director\": \"Ramón Peón (La Habana, Cuba; 1897 - San Juan, Puerto Rico; 1971) fue un periodista, bailarín, músico, productor, director, camarógrafo, actor y guionista de cine cubano. Se inició como camarógrafo en los antiguos estudios Kalem y Vitagraph, de Nueva York.\",\n        \"genre\": \"Horror\",\n        \"tickets\": [\n            {\n                \"id\": 2,\n                \"ticketRow\": 4,\n                \"ticketColumn\": 1,\n                \"price\": 25,\n                \"scheduleTicket\": \"2024-03-09T16:00:00\",\n                \"userId\": 1,\n                \"playId\": 1\n            }\n        ]\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "GetAllPlayTitleAsc",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7121/play?title=el&orderby=asc",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"play"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "el"
+										},
+										{
+											"key": "orderby",
+											"value": "asc"
+										}
+									]
+								},
+								"description": "### Get Play Details\n\nThis endpoint retrieves play details based on the provided title and order.\n\n#### Request\n\n- Method: GET\n- URL: `https://localhost:7121/play`\n- Query Parameters:\n    - title (string, required): The title of the play.\n    - orderby (string, required): The order in which the results should be sorted (e.g., \"asc\" for ascending order).\n\n#### Response\n\nThe response will be a JSON object with the following schema:\n\n``` json\n{\n  \"type\": \"array\",\n  \"items\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"id\": {\n        \"type\": \"number\"\n      },\n      \"title\": {\n        \"type\": \"string\"\n      },\n      \"descriptionPlay\": {\n        \"type\": \"string\"\n      },\n      \"synopsis\": {\n        \"type\": \"string\"\n      },\n      \"director\": {\n        \"type\": \"string\"\n      },\n      \"genre\": {\n        \"type\": \"string\"\n      },\n      \"tickets\": {\n        \"type\": \"array\"\n      }\n    }\n  }\n}\n\n ```"
+							},
+							"response": [
+								{
+									"name": "GetAllPlayTitleAsc",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://localhost:7121/play?title=el&orderby=asc",
+											"protocol": "https",
+											"host": [
+												"localhost"
+											],
+											"port": "7121",
+											"path": [
+												"play"
+											],
+											"query": [
+												{
+													"key": "title",
+													"value": "el"
+												},
+												{
+													"key": "orderby",
+													"value": "asc"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 09 Mar 2024 16:39:30 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 8,\n        \"title\": \"El Despertar\",\n        \"descriptionPlay\": \"Un thriller psicológico que desafía la percepción de la realidad.\",\n        \"synopsis\": \"En un manicomio abandonado, un psiquiatra se enfrenta a los fantasmas de su pasado mientras trata a un paciente con una conexión sorprendente. 'El Despertar de las Sombras' explora los límites de la cordura y la verdad en un viaje psicológico inolvidable.\",\n        \"director\": \"Iván Morales inició su trayectoria en el underground español como editor de fanzines y locutor de radios libres en la década de los ochenta, para iniciar en su infancia una carrera de actor que le ha llevado a participar en series de televisión como Nissaga: Amistades peligrosas o Poblenou.\",\n        \"genre\": \"Thriller\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 11,\n        \"title\": \"El Espejo Roto\",\n        \"descriptionPlay\": \"Un drama introspectivo sobre la identidad y el autodescubrimiento.\",\n        \"synopsis\": \"Cuando un espejo mágico revela versiones alternativas de sí mismos, los personajes de 'El Espejo Roto' se ven obligados a confrontar sus verdaderas identidades. Esta obra provocativa invita a la audiencia a reflexionar sobre la percepción y la realidad en un mundo lleno de reflejos fragmentados.\",\n        \"director\": \"Estudios de Teatro en el Taller de Actores Profesionales que dirigió José Monleón en la RESAD (Real Escuela Superior de Arte Dramático) Madrid -España. Pertenece al grupo de investigación en Estéticas Urbanas, con artículos como Los Demonios hacen catarsis en el Palacio de Justicia.\",\n        \"genre\": \"Drama\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 6,\n        \"title\": \"El Último Acto\",\n        \"descriptionPlay\": \"Un drama conmovedor sobre la vida, la pérdida y la redención.\",\n        \"synopsis\": \"En un pequeño teatro al borde de la quiebra, un grupo de actores veteranos se reúne para una última actuación que cambiará sus vidas para siempre. 'El Último Acto' es un conmovedor tributo al poder del arte y la capacidad de encontrar significado incluso en los momentos más oscuros.\",\n        \"director\": \"El último acto es el nuevo largometraje de Kenneth Branagh. Un homenaje a los últimos años de William Shakespeare. Cómo, por qué y en qué circunstancias decidió, una de las grandes figuras de la literatura universal, dejar el teatro y volver al pueblo con su familia.\",\n        \"genre\": \"Drama\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 2,\n        \"title\": \"En el Escenario\",\n        \"descriptionPlay\": \"Una experiencia teatral única para toda la familia.\",\n        \"synopsis\": \"Acompaña a personajes entrañables en un viaje mágico a través de cuentos clásicos y nuevos relatos. 'Cuentos en el Escenario' combina la magia del teatro con la nostalgia de los cuentos, creando un espectáculo encantador para todas las edades.\",\n        \"director\": \"Juanjo Pastor es un joven actor, que siempre ha tenido claro que quería dedicarse al mundo del espectáculo. Desde bien pequeño, en el colegio ya tenía teatro como asignatura extraescolar, y  también más tarde en el instituto.\",\n        \"genre\": \"Drama\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Legado del Escenario\",\n        \"descriptionPlay\": \"Un homenaje a los clásicos del teatro a lo largo de los siglos.\",\n        \"synopsis\": \"A través de escenas icónicas y monólogos inolvidables, 'El Legado del Escenario' rinde homenaje a las obras maestras que han definido el teatro a lo largo de la historia. Desde Shakespeare hasta Beckett, esta obra es un recordatorio conmovedor de la perdurabilidad del arte escénico.\",\n        \"director\": \"Andrés Lima Fernández de Toro es un actor y director teatral español vinculado a la compañía de teatro Animalario. El 30 de septiembre de 2019 fue galardonado con el Premio Nacional de Teatro.Comienza su carrera como actor y director teatral, desde muy temprana edad.\",\n        \"genre\": \"Historia\",\n        \"tickets\": []\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "GetAllPlayTitleDesc",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7121/play?title=el&orderby=desc",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"play"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "el"
+										},
+										{
+											"key": "orderby",
+											"value": "desc"
+										}
+									]
+								},
+								"description": "This endpoint sends an HTTP GET request to retrieve play details with the specified title and in descending order. The response will be a JSON object containing an array of play objects with keys such as id, title, descriptionPlay, synopsis, director, genre, and tickets.\n\n``` json\n{\n    \"type\": \"array\",\n    \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n            \"id\": {\n                \"type\": \"integer\"\n            },\n            \"title\": {\n                \"type\": \"string\"\n            },\n            \"descriptionPlay\": {\n                \"type\": \"string\"\n            },\n            \"synopsis\": {\n                \"type\": \"string\"\n            },\n            \"director\": {\n                \"type\": \"string\"\n            },\n            \"genre\": {\n                \"type\": \"string\"\n            },\n            \"tickets\": {\n                \"type\": \"array\"\n            }\n        }\n    }\n}\n\n ```"
+							},
+							"response": [
+								{
+									"name": "GetAllPlayTitleDesc",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://localhost:7121/play?title=el&orderby=desc",
+											"protocol": "https",
+											"host": [
+												"localhost"
+											],
+											"port": "7121",
+											"path": [
+												"play"
+											],
+											"query": [
+												{
+													"key": "title",
+													"value": "el"
+												},
+												{
+													"key": "orderby",
+													"value": "desc"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 09 Mar 2024 16:39:35 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 10,\n        \"title\": \"Legado del Escenario\",\n        \"descriptionPlay\": \"Un homenaje a los clásicos del teatro a lo largo de los siglos.\",\n        \"synopsis\": \"A través de escenas icónicas y monólogos inolvidables, 'El Legado del Escenario' rinde homenaje a las obras maestras que han definido el teatro a lo largo de la historia. Desde Shakespeare hasta Beckett, esta obra es un recordatorio conmovedor de la perdurabilidad del arte escénico.\",\n        \"director\": \"Andrés Lima Fernández de Toro es un actor y director teatral español vinculado a la compañía de teatro Animalario. El 30 de septiembre de 2019 fue galardonado con el Premio Nacional de Teatro.Comienza su carrera como actor y director teatral, desde muy temprana edad.\",\n        \"genre\": \"Historia\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 2,\n        \"title\": \"En el Escenario\",\n        \"descriptionPlay\": \"Una experiencia teatral única para toda la familia.\",\n        \"synopsis\": \"Acompaña a personajes entrañables en un viaje mágico a través de cuentos clásicos y nuevos relatos. 'Cuentos en el Escenario' combina la magia del teatro con la nostalgia de los cuentos, creando un espectáculo encantador para todas las edades.\",\n        \"director\": \"Juanjo Pastor es un joven actor, que siempre ha tenido claro que quería dedicarse al mundo del espectáculo. Desde bien pequeño, en el colegio ya tenía teatro como asignatura extraescolar, y  también más tarde en el instituto.\",\n        \"genre\": \"Drama\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 6,\n        \"title\": \"El Último Acto\",\n        \"descriptionPlay\": \"Un drama conmovedor sobre la vida, la pérdida y la redención.\",\n        \"synopsis\": \"En un pequeño teatro al borde de la quiebra, un grupo de actores veteranos se reúne para una última actuación que cambiará sus vidas para siempre. 'El Último Acto' es un conmovedor tributo al poder del arte y la capacidad de encontrar significado incluso en los momentos más oscuros.\",\n        \"director\": \"El último acto es el nuevo largometraje de Kenneth Branagh. Un homenaje a los últimos años de William Shakespeare. Cómo, por qué y en qué circunstancias decidió, una de las grandes figuras de la literatura universal, dejar el teatro y volver al pueblo con su familia.\",\n        \"genre\": \"Drama\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 11,\n        \"title\": \"El Espejo Roto\",\n        \"descriptionPlay\": \"Un drama introspectivo sobre la identidad y el autodescubrimiento.\",\n        \"synopsis\": \"Cuando un espejo mágico revela versiones alternativas de sí mismos, los personajes de 'El Espejo Roto' se ven obligados a confrontar sus verdaderas identidades. Esta obra provocativa invita a la audiencia a reflexionar sobre la percepción y la realidad en un mundo lleno de reflejos fragmentados.\",\n        \"director\": \"Estudios de Teatro en el Taller de Actores Profesionales que dirigió José Monleón en la RESAD (Real Escuela Superior de Arte Dramático) Madrid -España. Pertenece al grupo de investigación en Estéticas Urbanas, con artículos como Los Demonios hacen catarsis en el Palacio de Justicia.\",\n        \"genre\": \"Drama\",\n        \"tickets\": []\n    },\n    {\n        \"id\": 8,\n        \"title\": \"El Despertar\",\n        \"descriptionPlay\": \"Un thriller psicológico que desafía la percepción de la realidad.\",\n        \"synopsis\": \"En un manicomio abandonado, un psiquiatra se enfrenta a los fantasmas de su pasado mientras trata a un paciente con una conexión sorprendente. 'El Despertar de las Sombras' explora los límites de la cordura y la verdad en un viaje psicológico inolvidable.\",\n        \"director\": \"Iván Morales inició su trayectoria en el underground español como editor de fanzines y locutor de radios libres en la década de los ochenta, para iniciar en su infancia una carrera de actor que le ha llevado a participar en series de televisión como Nissaga: Amistades peligrosas o Poblenou.\",\n        \"genre\": \"Thriller\",\n        \"tickets\": []\n    }\n]"
+								}
+							]
+						}
+					],
+					"description": "Different types of get the play's of the theatre"
+				},
+				{
+					"name": "PostPlay",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"el cisne\",\r\n  \"descriptionPlay\": \"Una obra intrigante que explora los misterios del teatro clásico.\",\r\n  \"synopsis\": \"En el bullicioso mundo teatral del siglo XIX, un enmascarado misterioso acecha entre bambalinas, desentrañando secretos oscuros y rivalidades encubiertas. Con giros inesperados, 'La Máscara Oculta' transporta a la audiencia a un viaje lleno de intriga y emoción.\",\r\n  \"director\": \"Ramón Peón\",\r\n  \"genre\": \"Aventuras\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7121/play",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"play"
+							]
+						},
+						"description": "### POST /play\n\nThis endpoint allows the client to create a new play.\n\n#### Request Body\n\n- `title` (string, required): The title of the play.\n- `descriptionPlay` (string, required): Description of the play.\n- `synopsis` (string, required): Synopsis of the play.\n- `director` (string, required): Director of the play.\n- `genre` (string, required): Genre of the play.\n    \n\n#### Response\n\nThe response will be a JSON object with the same structure as the request body, confirming the details of the created play.\n\n#### Example Response\n\n``` json\n{\n    \"title\": \"\",\n    \"descriptionPlay\": \"\",\n    \"synopsis\": \"\",\n    \"director\": \"\",\n    \"genre\": \"\"\n}\n\n ```\n\n#### JSON Schema for Response\n\n``` json\n{\n    \"type\": \"object\",\n    \"properties\": {\n        \"title\": {\"type\": \"string\"},\n        \"descriptionPlay\": {\"type\": \"string\"},\n        \"synopsis\": {\"type\": \"string\"},\n        \"director\": {\"type\": \"string\"},\n        \"genre\": {\"type\": \"string\"}\n    },\n    \"required\": [\"title\", \"descriptionPlay\", \"synopsis\", \"director\", \"genre\"]\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "PostPlay",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"el cisne\",\r\n  \"descriptionPlay\": \"Una obra intrigante que explora los misterios del teatro clásico.\",\r\n  \"synopsis\": \"En el bullicioso mundo teatral del siglo XIX, un enmascarado misterioso acecha entre bambalinas, desentrañando secretos oscuros y rivalidades encubiertas. Con giros inesperados, 'La Máscara Oculta' transporta a la audiencia a un viaje lleno de intriga y emoción.\",\r\n  \"director\": \"Ramón Peón\",\r\n  \"genre\": \"Aventuras\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7121/play",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"play"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:38:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Location",
+									"value": "https://localhost:7121/Play/14"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": \"el cisne\",\n    \"descriptionPlay\": \"Una obra intrigante que explora los misterios del teatro clásico.\",\n    \"synopsis\": \"En el bullicioso mundo teatral del siglo XIX, un enmascarado misterioso acecha entre bambalinas, desentrañando secretos oscuros y rivalidades encubiertas. Con giros inesperados, 'La Máscara Oculta' transporta a la audiencia a un viaje lleno de intriga y emoción.\",\n    \"director\": \"Ramón Peón\",\n    \"genre\": \"Aventuras\"\n}"
+						}
+					]
+				},
+				{
+					"name": "GetOnePlay",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7121/play/14",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"play",
+								"14"
+							]
+						},
+						"description": "### Get Play Details\n\nThis endpoint retrieves details of a specific play.\n\n#### Request\n\n- Method: GET\n- Endpoint: `https://localhost:7121/play/14`\n    \n\n#### Response\n\nThe response for this request follows the JSON schema below:\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": {\n      \"type\": \"integer\"\n    },\n    \"title\": {\n      \"type\": \"string\"\n    },\n    \"descriptionPlay\": {\n      \"type\": \"string\"\n    },\n    \"synopsis\": {\n      \"type\": \"string\"\n    },\n    \"director\": {\n      \"type\": \"string\"\n    },\n    \"genre\": {\n      \"type\": \"string\"\n    },\n    \"tickets\": {\n      \"type\": \"array\"\n    }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "GetOnePlay",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7121/play/14",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"play",
+										"14"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:38:22 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 14,\n    \"title\": \"el cisne\",\n    \"descriptionPlay\": \"Una obra intrigante que explora los misterios del teatro clásico.\",\n    \"synopsis\": \"En el bullicioso mundo teatral del siglo XIX, un enmascarado misterioso acecha entre bambalinas, desentrañando secretos oscuros y rivalidades encubiertas. Con giros inesperados, 'La Máscara Oculta' transporta a la audiencia a un viaje lleno de intriga y emoción.\",\n    \"director\": \"Ramón Peón\",\n    \"genre\": \"Aventuras\",\n    \"tickets\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "PutPlay",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"el cisne\",\r\n  \"descriptionPlay\": \"Una obra intrigante que explora los misterios del teatro clásico.\",\r\n  \"synopsis\": \"En el bullicioso mundo teatral del siglo XIX, un enmascarado misterioso acecha entre bambalinas, desentrañando secretos oscuros y rivalidades encubiertas. Con giros inesperados, 'La Máscara Oculta' transporta a la audiencia a un viaje lleno de intriga y emoción.\",\r\n  \"director\": \"Jorge\",\r\n  \"genre\": \"Comedia Romántica\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7121/play/14",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"play",
+								"14"
+							]
+						},
+						"description": "This endpoint allows the user to update a play with the specified ID. The request should be sent as an HTTP PUT to the specified URL. The request body has to contain at least one of the following details of the play: title, description, synopsis, director, and genre.\n\n### Request Body\n\n- title (string, required): The updated title of the play.\n- descriptionPlay (string, required): The updated description of the play.\n- synopsis (string, required): The updated synopsis of the play.\n- director (string, required): The updated director of the play.\n- genre (string, required): The updated genre of the play.\n    \n\n### Response\n\nThe response of this request will be in JSON format and will include the updated details of the play. The response schema should be documented as follows:\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"title\": {\n      \"type\": \"string\"\n    },\n    \"descriptionPlay\": {\n      \"type\": \"string\"\n    },\n    \"synopsis\": {\n      \"type\": \"string\"\n    },\n    \"director\": {\n      \"type\": \"string\"\n    },\n    \"genre\": {\n      \"type\": \"string\"\n    }\n  }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "PutPlay",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"el cisne\",\r\n  \"descriptionPlay\": \"Una obra intrigante que explora los misterios del teatro clásico.\",\r\n  \"synopsis\": \"En el bullicioso mundo teatral del siglo XIX, un enmascarado misterioso acecha entre bambalinas, desentrañando secretos oscuros y rivalidades encubiertas. Con giros inesperados, 'La Máscara Oculta' transporta a la audiencia a un viaje lleno de intriga y emoción.\",\r\n  \"director\": \"Jorge\",\r\n  \"genre\": \"Comedia Romántica\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7121/play/14",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"play",
+										"14"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:38:40 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "DeletePlay",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7121/play/14",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"play",
+								"14"
+							]
+						},
+						"description": "### Delete Play\n\nThis endpoint is used to delete a specific play with the ID 14.\n\n#### Response\n\nThe response of this request is a JSON schema representing the data structure of the response. It provides the format and structure of the data that will be returned upon successful deletion of the play."
+					},
+					"response": [
+						{
+							"name": "DeletePlay",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7121/play/14",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"play",
+										"14"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:39:00 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "GetPlayTickets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7121/play/1/tickets",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7121",
+							"path": [
+								"play",
+								"1",
+								"tickets"
+							]
+						},
+						"description": "### Get Play Tickets\n\nThis endpoint retrieves the tickets for a specific play.\n\n#### Request\n\n- Method: GET\n- Endpoint: `https://localhost:7121/play/1/tickets`\n    \n\n#### Response\n\nThe response will be a JSON array containing ticket objects with the following properties:\n\n- `id` (number): The unique identifier of the ticket.\n- `ticketRow` (number): The row number of the ticket.\n- `ticketColumn` (number): The column number of the ticket.\n- `price` (number): The price of the ticket.\n- `scheduleTicket` (string): The schedule ticket information.\n- `userId` (number): The unique identifier of the user who purchased the ticket.\n- `playId` (number): The unique identifier of the play for which the ticket is issued.\n    \n\nExample response:\n\n``` json\n[\n    {\n        \"id\": 0,\n        \"ticketRow\": 0,\n        \"ticketColumn\": 0,\n        \"price\": 0,\n        \"scheduleTicket\": \"\",\n        \"userId\": 0,\n        \"playId\": 0\n    }\n]\n\n ```\n\n#### JSON Schema\n\n``` json\n{\n    \"type\": \"array\",\n    \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n            \"id\": { \"type\": \"number\" },\n            \"ticketRow\": { \"type\": \"number\" },\n            \"ticketColumn\": { \"type\": \"number\" },\n            \"price\": { \"type\": \"number\" },\n            \"scheduleTicket\": { \"type\": \"string\" },\n            \"userId\": { \"type\": \"number\" },\n            \"playId\": { \"type\": \"number\" }\n        }\n    }\n}\n\n ```"
+					},
+					"response": [
+						{
+							"name": "GetPlayTickets",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7121/play/1/tickets",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7121",
+									"path": [
+										"play",
+										"1",
+										"tickets"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 09 Mar 2024 16:39:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"ticketRow\": 4,\n        \"ticketColumn\": 1,\n        \"price\": 25,\n        \"scheduleTicket\": \"2024-03-09T16:00:00\",\n        \"userId\": 1,\n        \"playId\": 1\n    }\n]"
+						}
+					]
+				}
+			],
+			"description": "Play's of the theatre play"
+		}
+	]
+}

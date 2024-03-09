@@ -10,3 +10,15 @@ C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\Clase
 C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\common\obj\Debug\net6.0\refint\TeatroWeb.common.dll
 C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\common\obj\Debug\net6.0\TeatroWeb.common.pdb
 C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\2ºTrimestreProyectos\TeatroVue_Backend\common\obj\Debug\net6.0\ref\TeatroWeb.common.dll
+D:\SValero\BackendTeatro\common\bin\Debug\net6.0\TeatroWeb.common.deps.json
+D:\SValero\BackendTeatro\common\bin\Debug\net6.0\TeatroWeb.common.dll
+D:\SValero\BackendTeatro\common\bin\Debug\net6.0\TeatroWeb.common.pdb
+D:\SValero\BackendTeatro\common\obj\Debug\net6.0\TeatroWeb.common.csproj.AssemblyReference.cache
+D:\SValero\BackendTeatro\common\obj\Debug\net6.0\TeatroWeb.common.GeneratedMSBuildEditorConfig.editorconfig
+D:\SValero\BackendTeatro\common\obj\Debug\net6.0\TeatroWeb.common.AssemblyInfoInputs.cache
+D:\SValero\BackendTeatro\common\obj\Debug\net6.0\TeatroWeb.common.AssemblyInfo.cs
+D:\SValero\BackendTeatro\common\obj\Debug\net6.0\TeatroWeb.common.csproj.CoreCompileInputs.cache
+D:\SValero\BackendTeatro\common\obj\Debug\net6.0\TeatroWeb.common.dll
+D:\SValero\BackendTeatro\common\obj\Debug\net6.0\refint\TeatroWeb.common.dll
+D:\SValero\BackendTeatro\common\obj\Debug\net6.0\TeatroWeb.common.pdb
+D:\SValero\BackendTeatro\common\obj\Debug\net6.0\ref\TeatroWeb.common.dll

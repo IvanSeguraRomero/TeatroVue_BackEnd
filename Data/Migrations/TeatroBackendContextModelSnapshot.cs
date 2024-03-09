@@ -84,8 +84,8 @@ namespace TeatroWeb.Data.Migrations
                         {
                             id = 6,
                             descriptionPlay = "Un drama conmovedor sobre la vida, la pérdida y la redención.",
-                            director = "",
-                            genre = "",
+                            director = "El último acto es el nuevo largometraje de Kenneth Branagh. Un homenaje a los últimos años de William Shakespeare. Cómo, por qué y en qué circunstancias decidió, una de las grandes figuras de la literatura universal, dejar el teatro y volver al pueblo con su familia.",
+                            genre = "Drama",
                             synopsis = "En un pequeño teatro al borde de la quiebra, un grupo de actores veteranos se reúne para una última actuación que cambiará sus vidas para siempre. 'El Último Acto' es un conmovedor tributo al poder del arte y la capacidad de encontrar significado incluso en los momentos más oscuros.",
                             title = "El Último Acto"
                         },
@@ -196,38 +196,6 @@ namespace TeatroWeb.Data.Migrations
                     b.HasIndex("userId");
 
                     b.ToTable("Tickets");
-
-                    b.HasData(
-                        new
-                        {
-                            id = 1,
-                            TicketColumn = 1,
-                            TicketRow = 1,
-                            playId = 1,
-                            price = 15.00m,
-                            scheduleTicket = new DateTime(2024, 3, 6, 13, 0, 26, 915, DateTimeKind.Local).AddTicks(1731),
-                            userId = 1
-                        },
-                        new
-                        {
-                            id = 2,
-                            TicketColumn = 2,
-                            TicketRow = 1,
-                            playId = 2,
-                            price = 15.00m,
-                            scheduleTicket = new DateTime(2024, 3, 6, 13, 0, 26, 915, DateTimeKind.Local).AddTicks(1768),
-                            userId = 1
-                        },
-                        new
-                        {
-                            id = 3,
-                            TicketColumn = 3,
-                            TicketRow = 1,
-                            playId = 1,
-                            price = 15.00m,
-                            scheduleTicket = new DateTime(2024, 3, 6, 13, 0, 26, 915, DateTimeKind.Local).AddTicks(1771),
-                            userId = 2
-                        });
                 });
 
             modelBuilder.Entity("TeatroWeb.Models.User", b =>
@@ -273,7 +241,7 @@ namespace TeatroWeb.Data.Migrations
                         {
                             id = 1,
                             direction = "addressexample",
-                            email = "user1@example.com",
+                            email = "admin@svalero.com",
                             notes = "Note 1",
                             passwd = "passexample",
                             payment = "Credit Card",

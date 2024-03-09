@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TeatroWeb.Data.Migrations
 {
-    public partial class FinalMigration : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -86,7 +86,7 @@ namespace TeatroWeb.Data.Migrations
                     { 3, "Un thriller teatral que mantendrá al público al borde de sus asientos.", "Abel González Melo (La Habana, 14 de enero de 1980) es doctor en Estudios Literarios y máster en Teatro por la Universidad Complutense de Madrid, así como licenciado en Teatrología por el Instituto Superior de Arte de Cuba.", "Thriller", "En una ciudad envuelta en sombras, un detective atormentado se enfrenta a su caso más oscuro. 'El Misterio de la Noche' es un fascinante juego de ingenio y suspense que desafía al público a resolver el enigma antes de que se revele la verdad impactante.", "La Noche" },
                     { 4, "Una versión contemporánea del clásico de Shakespeare con un giro moderno.", "Mark Anthony Luhrmann (Sídney, Nueva Gales del Sur, 17 de septiembre de 1962), conocido como Baz Luhrmann, es un actor, director, guionista y productor de cine australiano. Es ampliamente considerado como uno de los más destacados directores de cine.", "Romance", "En las bulliciosas calles de la ciudad actual, dos almas destinadas se encuentran en medio de la rivalidad de sus familias. 'Romeo y Julieta Reimaginados' fusiona la poesía de Shakespeare con la vibrante energía de la cultura urbana, explorando el amor y la tragedia en el siglo XXI.", "Romeo y Julieta" },
                     { 5, "Una odisea surrealista a través de la mente humana.", "Gerardo Vera Perales (Miraflores de la Sierra (Madrid) 10 de marzo de 1947 - 20 de septiembre de 2020)fue un escenógrafo, diseñador de vestuario, actor y director de cine y de teatro español. Dirigió el espectáculo 'Azabache' en la Expo92 de Sevilla, cosechando un fabuloso éxito.", "Drama", "Sumérgete en el fascinante paisaje de los sueños con 'El Jardín de los Sueños'. Esta obra surrealista lleva al público a un viaje introspectivo a medida que los personajes navegan por los recovecos de la mente humana, explorando deseos, miedos y esperanzas ocultas.", "Los Sueños" },
-                    { 6, "Un drama conmovedor sobre la vida, la pérdida y la redención.", "", "", "En un pequeño teatro al borde de la quiebra, un grupo de actores veteranos se reúne para una última actuación que cambiará sus vidas para siempre. 'El Último Acto' es un conmovedor tributo al poder del arte y la capacidad de encontrar significado incluso en los momentos más oscuros.", "El Último Acto" },
+                    { 6, "Un drama conmovedor sobre la vida, la pérdida y la redención.", "El último acto es el nuevo largometraje de Kenneth Branagh. Un homenaje a los últimos años de William Shakespeare. Cómo, por qué y en qué circunstancias decidió, una de las grandes figuras de la literatura universal, dejar el teatro y volver al pueblo con su familia.", "Drama", "En un pequeño teatro al borde de la quiebra, un grupo de actores veteranos se reúne para una última actuación que cambiará sus vidas para siempre. 'El Último Acto' es un conmovedor tributo al poder del arte y la capacidad de encontrar significado incluso en los momentos más oscuros.", "El Último Acto" },
                     { 7, "Una comedia musical llena de risas y alegría.", "Nacido en Granada, Zapata inició sus estudios de canto en Madrid con Toñi Rosado Casas y los perfeccionó con Ana Luisa Chova en el Conservatorio Superior de Música de Valencia. Ha asistido a clases magistrales y cursos de perfeccionamiento con Yelena Obraztsova, Pedro Lavirgen, Renata Scotto.", "Comedia", "En un mundo donde la risa es la moneda de cambio, 'Sinfonía de Risas' lleva al público a un viaje musical hilarante. Con números pegajosos y situaciones cómicas, esta obra es un antídoto perfecto para el estrés diario, ofreciendo una experiencia teatral ligera y divertida.", "Sinfonía de Risas" },
                     { 8, "Un thriller psicológico que desafía la percepción de la realidad.", "Iván Morales inició su trayectoria en el underground español como editor de fanzines y locutor de radios libres en la década de los ochenta, para iniciar en su infancia una carrera de actor que le ha llevado a participar en series de televisión como Nissaga: Amistades peligrosas o Poblenou.", "Thriller", "En un manicomio abandonado, un psiquiatra se enfrenta a los fantasmas de su pasado mientras trata a un paciente con una conexión sorprendente. 'El Despertar de las Sombras' explora los límites de la cordura y la verdad en un viaje psicológico inolvidable.", "El Despertar" },
                     { 9, "Una experiencia teatral visualmente impactante que celebra la diversidad emocional.", "David Fernández Troncoso, desde que debutó con diez años, su vida profesional ha estado dedicada en exclusiva al teatro. Por su carrera pasan nombres como Titirimundi, Instituto del Teatro, Comedia de Buenos Aires, CAT…", "Drama", "Con un enfoque innovador en la expresión emocional, 'Caleidoscopio de Emociones' fusiona la danza, el teatro y la tecnología para llevar al público a un viaje visualmente deslumbrante. Desde la euforia hasta la melancolía, esta obra invita a explorar la complejidad de las emociones humanas.", "Las Emociones" },
@@ -100,24 +100,9 @@ namespace TeatroWeb.Data.Migrations
                 columns: new[] { "id", "direction", "email", "notes", "passwd", "payment", "surname", "tlf", "username" },
                 values: new object[,]
                 {
-                    { 1, "addressexample", "user1@example.com", "Note 1", "passexample", "Credit Card", "admin", 123456789, "admin" },
+                    { 1, "addressexample", "admin@svalero.com", "Note 1", "passexample", "Credit Card", "admin", 123456789, "admin" },
                     { 2, "addressexample", "user2@example.com", "Note 2", "passexample", "PayPal", "no-admin", 987654321, "no-admin" }
                 });
-
-            migrationBuilder.InsertData(
-                table: "Tickets",
-                columns: new[] { "id", "TicketColumn", "TicketRow", "playId", "price", "scheduleTicket", "userId" },
-                values: new object[] { 1, 1, 1, 1, 15.00m, new DateTime(2024, 3, 6, 13, 0, 26, 915, DateTimeKind.Local).AddTicks(1731), 1 });
-
-            migrationBuilder.InsertData(
-                table: "Tickets",
-                columns: new[] { "id", "TicketColumn", "TicketRow", "playId", "price", "scheduleTicket", "userId" },
-                values: new object[] { 2, 2, 1, 2, 15.00m, new DateTime(2024, 3, 6, 13, 0, 26, 915, DateTimeKind.Local).AddTicks(1768), 1 });
-
-            migrationBuilder.InsertData(
-                table: "Tickets",
-                columns: new[] { "id", "TicketColumn", "TicketRow", "playId", "price", "scheduleTicket", "userId" },
-                values: new object[] { 3, 3, 1, 1, 15.00m, new DateTime(2024, 3, 6, 13, 0, 26, 915, DateTimeKind.Local).AddTicks(1771), 2 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Tickets_playId",

@@ -79,8 +79,8 @@ public class TeatroBackendContext : DbContext{
             title = "El Último Acto",
             descriptionPlay = "Un drama conmovedor sobre la vida, la pérdida y la redención.",
             synopsis = "En un pequeño teatro al borde de la quiebra, un grupo de actores veteranos se reúne para una última actuación que cambiará sus vidas para siempre. 'El Último Acto' es un conmovedor tributo al poder del arte y la capacidad de encontrar significado incluso en los momentos más oscuros.",
-            director = "",
-            genre = "",
+            director = "El último acto es el nuevo largometraje de Kenneth Branagh. Un homenaje a los últimos años de William Shakespeare. Cómo, por qué y en qué circunstancias decidió, una de las grandes figuras de la literatura universal, dejar el teatro y volver al pueblo con su familia.",
+            genre = "Drama",
             tickets = new List<Ticket>()
         },
         new Play
@@ -173,7 +173,7 @@ public class TeatroBackendContext : DbContext{
                             surname = "admin",
                             passwd = "passexample",
                             direction = "addressexample",
-                            email = "user1@example.com",
+                            email = "admin@svalero.com",
                             notes = "Note 1",
                             tlf = 123456789,
                             payment = "Credit Card",
@@ -194,42 +194,6 @@ public class TeatroBackendContext : DbContext{
                         }
                         
                     );
-            modelBuilder.Entity<Ticket>().HasData(
-                        new Ticket
-                        {
-                            id = 1,
-                            TicketRow = 1,
-                            TicketColumn = 1,
-                            price = 15.00m,
-                            // meter tambien el horario y sala para las reservas en venta
-                            scheduleTicket = DateTime.Now,
-                            userId = 1,
-                            playId = 1
-                        },
-                        new Ticket
-                        {
-                            id = 2,
-                            TicketRow = 1,
-                            TicketColumn = 2,
-                            price = 15.00m,
-                            // meter tambien el horario y sala para las reservas en venta
-                            scheduleTicket = DateTime.Now,
-                            userId = 1,
-                            playId = 2
-                        },
-                        new Ticket
-                        {
-                            id = 3,
-                            TicketRow = 1,
-                            TicketColumn = 3,
-                            price = 15.00m,
-                            // meter tambien el horario y sala para las reservas en venta
-                            scheduleTicket = DateTime.Now,
-                            userId = 2,
-                            playId = 1
-                        }
-                    );
-
             base.OnModelCreating(modelBuilder);
         }
     }

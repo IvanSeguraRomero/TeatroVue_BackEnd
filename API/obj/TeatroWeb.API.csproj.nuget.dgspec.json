@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\API\\TeatroWeb.API.csproj": {}
+    "D:\\SValero\\BackendTeatro\\API\\TeatroWeb.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\API\\TeatroWeb.API.csproj": {
+    "D:\\SValero\\BackendTeatro\\API\\TeatroWeb.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\API\\TeatroWeb.API.csproj",
+        "projectUniqueName": "D:\\SValero\\BackendTeatro\\API\\TeatroWeb.API.csproj",
         "projectName": "TeatroWeb.API",
-        "projectPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\API\\TeatroWeb.API.csproj",
-        "packagesPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\API\\obj\\",
+        "projectPath": "D:\\SValero\\BackendTeatro\\API\\TeatroWeb.API.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\SValero\\BackendTeatro\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,14 +26,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Business\\TeatroWeb.Business.csproj": {
-                "projectPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Business\\TeatroWeb.Business.csproj"
+              "D:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj": {
+                "projectPath": "D:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj"
               },
-              "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\common\\TeatroWeb.common.csproj": {
-                "projectPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\common\\TeatroWeb.common.csproj"
+              "D:\\SValero\\BackendTeatro\\common\\TeatroWeb.common.csproj": {
+                "projectPath": "D:\\SValero\\BackendTeatro\\common\\TeatroWeb.common.csproj"
               },
-              "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Models\\TeatroWeb.Models.csproj": {
-                "projectPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Models\\TeatroWeb.Models.csproj"
+              "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
+                "projectPath": "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj"
               }
             }
           }
@@ -78,21 +78,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.415\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.419\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Business\\TeatroWeb.Business.csproj": {
+    "D:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Business\\TeatroWeb.Business.csproj",
+        "projectUniqueName": "D:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj",
         "projectName": "TeatroWeb.Business",
-        "projectPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Business\\TeatroWeb.Business.csproj",
-        "packagesPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Business\\obj\\",
+        "projectPath": "D:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\SValero\\BackendTeatro\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -104,11 +104,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Data\\TeatroWeb.Data.csproj": {
-                "projectPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Data\\TeatroWeb.Data.csproj"
+              "D:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj": {
+                "projectPath": "D:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj"
               },
-              "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Models\\TeatroWeb.Models.csproj": {
-                "projectPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Models\\TeatroWeb.Models.csproj"
+              "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
+                "projectPath": "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj"
               }
             }
           }
@@ -138,21 +138,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.415\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.419\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\common\\TeatroWeb.common.csproj": {
+    "D:\\SValero\\BackendTeatro\\common\\TeatroWeb.common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\common\\TeatroWeb.common.csproj",
+        "projectUniqueName": "D:\\SValero\\BackendTeatro\\common\\TeatroWeb.common.csproj",
         "projectName": "TeatroWeb.common",
-        "projectPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\common\\TeatroWeb.common.csproj",
-        "packagesPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\common\\obj\\",
+        "projectPath": "D:\\SValero\\BackendTeatro\\common\\TeatroWeb.common.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\SValero\\BackendTeatro\\common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -197,21 +197,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.415\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.419\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Data\\TeatroWeb.Data.csproj": {
+    "D:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Data\\TeatroWeb.Data.csproj",
+        "projectUniqueName": "D:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj",
         "projectName": "TeatroWeb.Data",
-        "projectPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Data\\TeatroWeb.Data.csproj",
-        "packagesPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Data\\obj\\",
+        "projectPath": "D:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\SValero\\BackendTeatro\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -223,8 +223,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Models\\TeatroWeb.Models.csproj": {
-                "projectPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Models\\TeatroWeb.Models.csproj"
+              "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
+                "projectPath": "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj"
               }
             }
           }
@@ -270,21 +270,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.415\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.419\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Models\\TeatroWeb.Models.csproj": {
+    "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Models\\TeatroWeb.Models.csproj",
+        "projectUniqueName": "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj",
         "projectName": "TeatroWeb.Models",
-        "projectPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Models\\TeatroWeb.Models.csproj",
-        "packagesPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\2ºTrimestreProyectos\\TeatroVue_Backend\\Models\\obj\\",
+        "projectPath": "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\SValero\\BackendTeatro\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -323,7 +323,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.415\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.419\\RuntimeIdentifierGraph.json"
         }
       }
     }

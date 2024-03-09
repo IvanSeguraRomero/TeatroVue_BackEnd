@@ -22,3 +22,15 @@ D:\SValero\BackendTeatro\common\obj\Debug\net6.0\TeatroWeb.common.dll
 D:\SValero\BackendTeatro\common\obj\Debug\net6.0\refint\TeatroWeb.common.dll
 D:\SValero\BackendTeatro\common\obj\Debug\net6.0\TeatroWeb.common.pdb
 D:\SValero\BackendTeatro\common\obj\Debug\net6.0\ref\TeatroWeb.common.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\common\bin\Debug\net6.0\TeatroWeb.common.deps.json
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\common\bin\Debug\net6.0\TeatroWeb.common.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\common\bin\Debug\net6.0\TeatroWeb.common.pdb
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\common\obj\Debug\net6.0\TeatroWeb.common.csproj.AssemblyReference.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\common\obj\Debug\net6.0\TeatroWeb.common.GeneratedMSBuildEditorConfig.editorconfig
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\common\obj\Debug\net6.0\TeatroWeb.common.AssemblyInfoInputs.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\common\obj\Debug\net6.0\TeatroWeb.common.AssemblyInfo.cs
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\common\obj\Debug\net6.0\TeatroWeb.common.csproj.CoreCompileInputs.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\common\obj\Debug\net6.0\TeatroWeb.common.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\common\obj\Debug\net6.0\refint\TeatroWeb.common.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\common\obj\Debug\net6.0\TeatroWeb.common.pdb
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\TeatroVue\common\obj\Debug\net6.0\ref\TeatroWeb.common.dll

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SValero\\BackendTeatro\\common\\TeatroWeb.common.csproj": {}
+    "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\common\\TeatroWeb.common.csproj": {}
   },
   "projects": {
-    "D:\\SValero\\BackendTeatro\\common\\TeatroWeb.common.csproj": {
+    "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\common\\TeatroWeb.common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SValero\\BackendTeatro\\common\\TeatroWeb.common.csproj",
+        "projectUniqueName": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\common\\TeatroWeb.common.csproj",
         "projectName": "TeatroWeb.common",
-        "projectPath": "D:\\SValero\\BackendTeatro\\common\\TeatroWeb.common.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\SValero\\BackendTeatro\\common\\obj\\",
+        "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\common\\TeatroWeb.common.csproj",
+        "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
+        "outputPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.419\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.415\\RuntimeIdentifierGraph.json"
         }
       }
     }

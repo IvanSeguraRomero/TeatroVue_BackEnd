@@ -12,8 +12,8 @@ using TeatroWeb.Data;
 namespace TeatroWeb.Data.Migrations
 {
     [DbContext(typeof(TeatroBackendContext))]
-    [Migration("20240309151644_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240309173628_FinalMigration")]
+    partial class FinalMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

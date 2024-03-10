@@ -2154,19 +2154,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\peter\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\Business\\TeatroWeb.Business.csproj",
+      "projectUniqueName": "D:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj",
       "projectName": "TeatroWeb.Business",
-      "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\Business\\TeatroWeb.Business.csproj",
-      "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
-      "outputPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\Business\\obj\\",
+      "projectPath": "D:\\SValero\\BackendTeatro\\Business\\TeatroWeb.Business.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "D:\\SValero\\BackendTeatro\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -2178,11 +2178,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\Data\\TeatroWeb.Data.csproj": {
-              "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\Data\\TeatroWeb.Data.csproj"
+            "D:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj": {
+              "projectPath": "D:\\SValero\\BackendTeatro\\Data\\TeatroWeb.Data.csproj"
             },
-            "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\Models\\TeatroWeb.Models.csproj": {
-              "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\TeatroVue\\Models\\TeatroWeb.Models.csproj"
+            "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj": {
+              "projectPath": "D:\\SValero\\BackendTeatro\\Models\\TeatroWeb.Models.csproj"
             }
           }
         }
@@ -2212,7 +2212,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.415\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.419\\RuntimeIdentifierGraph.json"
       }
     }
   }

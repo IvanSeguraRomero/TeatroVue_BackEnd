@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "c9cafab8-9bdb-40e3-ac5e-336d01f83f29",
+		"_postman_id": "3bf33979-43a2-45b2-bf10-27ed698bf239",
 		"name": "Postman-Teatro",
 		"description": "Theatre play for 2ºDAW project",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
@@ -16,12 +16,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7121/ticket",
-							"protocol": "https",
+							"raw": "{{dominio}}/ticket",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"ticket"
 							]
@@ -87,12 +85,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7121/ticket",
-							"protocol": "https",
+							"raw": "{{dominio}}/ticket",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"ticket"
 							]
@@ -162,12 +158,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7121/ticket/3",
-							"protocol": "https",
+							"raw": "{{dominio}}/ticket/3",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"ticket",
 								"3"
@@ -235,12 +229,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7121/ticket/2",
-							"protocol": "https",
+							"raw": "{{dominio}}/ticket/2",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"ticket",
 								"2"
@@ -290,7 +282,7 @@
 								}
 							],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -300,12 +292,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7121/ticket/3",
-							"protocol": "https",
+							"raw": "{{dominio}}/ticket/3",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"ticket",
 								"3"
@@ -346,7 +336,7 @@
 								}
 							],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				}
@@ -362,12 +352,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7121/user",
-							"protocol": "https",
+							"raw": "{{dominio}}/user",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"user"
 							]
@@ -433,12 +421,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7121/user",
-							"protocol": "https",
+							"raw": "{{dominio}}/user",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"user"
 							]
@@ -508,12 +494,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7121/user/3",
-							"protocol": "https",
+							"raw": "{{dominio}}/user/3",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"user",
 								"3"
@@ -592,12 +576,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7121/user/3",
-							"protocol": "https",
+							"raw": "{{dominio}}/user/3",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"user",
 								"3"
@@ -647,7 +629,7 @@
 								}
 							],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -657,12 +639,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7121/user/4",
-							"protocol": "https",
+							"raw": "{{dominio}}/user/4",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"user",
 								"4"
@@ -703,7 +683,7 @@
 								}
 							],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -713,12 +693,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7121/user/1/tickets",
-							"protocol": "https",
+							"raw": "{{dominio}}/user/1/tickets",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"user",
 								"1",
@@ -788,12 +766,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://localhost:7121/play",
-									"protocol": "https",
+									"raw": "{{dominio}}/play",
 									"host": [
-										"localhost"
+										"{{dominio}}"
 									],
-									"port": "7121",
 									"path": [
 										"play"
 									]
@@ -850,12 +826,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://localhost:7121/play?genre=horror",
-									"protocol": "https",
+									"raw": "{{dominio}}/play?genre=horror",
 									"host": [
-										"localhost"
+										"{{dominio}}"
 									],
-									"port": "7121",
 									"path": [
 										"play"
 									],
@@ -924,12 +898,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://localhost:7121/play?title=el&orderby=asc",
-									"protocol": "https",
+									"raw": "{{dominio}}/play?title=el&orderby=asc",
 									"host": [
-										"localhost"
+										"{{dominio}}"
 									],
-									"port": "7121",
 									"path": [
 										"play"
 									],
@@ -1006,12 +978,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://localhost:7121/play?title=el&orderby=desc",
-									"protocol": "https",
+									"raw": "{{dominio}}/play?title=el&orderby=desc",
 									"host": [
-										"localhost"
+										"{{dominio}}"
 									],
-									"port": "7121",
 									"path": [
 										"play"
 									],
@@ -1100,12 +1070,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7121/play",
-							"protocol": "https",
+							"raw": "{{dominio}}/play",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"play"
 							]
@@ -1175,12 +1143,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7121/play/14",
-							"protocol": "https",
+							"raw": "{{dominio}}/play/14",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"play",
 								"14"
@@ -1248,12 +1214,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:7121/play/14",
-							"protocol": "https",
+							"raw": "{{dominio}}/play/14",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"play",
 								"14"
@@ -1303,7 +1267,7 @@
 								}
 							],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -1313,12 +1277,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7121/play/14",
-							"protocol": "https",
+							"raw": "{{dominio}}/play/14",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"play",
 								"14"
@@ -1359,7 +1321,7 @@
 								}
 							],
 							"cookie": [],
-							"body": null
+							"body": ""
 						}
 					]
 				},
@@ -1369,12 +1331,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7121/play/1/tickets",
-							"protocol": "https",
+							"raw": "{{dominio}}/play/1/tickets",
 							"host": [
-								"localhost"
+								"{{dominio}}"
 							],
-							"port": "7121",
 							"path": [
 								"play",
 								"1",
